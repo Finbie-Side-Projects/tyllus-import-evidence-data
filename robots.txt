@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://finbie-side-projects.github.io/tyllus-import-evidence-data/sitemap.xml
