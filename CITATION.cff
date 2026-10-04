@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite the Tyllus U.S. Import Evidence Change Radar."
+title: "Tyllus U.S. Import Evidence Change Radar"
+type: dataset
+authors:
+  - name: "Tyllus"
+version: "2026-10-04"
+date-released: 2026-10-05
+url: "https://www.tyllus.com/en/resources/us-import-evidence-change-radar"
+repository-code: "https://github.com/Finbie-Side-Projects/tyllus-import-evidence-data"
+keywords:
+  - United States imports
+  - Federal Register
+  - customs evidence
+  - trade policy
+  - supply chain traceability
+  - DCAT
+  - CSVW
+preferred-citation:
+  type: dataset
+  title: "Tyllus U.S. Import Evidence Change Radar"
+  authors:
+    - name: "Tyllus"
+  year: 2026
+  url: "https://www.tyllus.com/en/resources/us-import-evidence-change-radar"
