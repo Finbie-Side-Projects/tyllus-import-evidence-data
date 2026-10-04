@@ -14,7 +14,7 @@ The current snapshot contains **141 notices** from the U.S. Federal Register and
 | [CSVW](data/us-import-evidence-change-radar.csv-metadata.json) | CSV field definitions and machine-readable schema |
 | [Manifest](data/manifest.json) | Capture time, record count, source URLs and SHA-256 checksums |
 
-The [live Radar](https://www.tyllus.com/en/resources/us-import-evidence-change-radar) remains the human-readable source. The repository refreshes from Tyllus's public endpoints every day and commits only when the published files change.
+The [live Radar](https://www.tyllus.com/en/resources/us-import-evidence-change-radar) remains the human-readable source. An on-demand workflow refreshes the repository from Tyllus's public endpoints and commits only when the published files change.
 
 ## Provenance
 
@@ -30,7 +30,7 @@ Use the repository's [`CITATION.cff`](CITATION.cff) or cite the live dataset:
 
 ## Updates and corrections
 
-The scheduled refresh script downloads only the four public dataset files, verifies that each response is successful and writes a checksum manifest. Open an issue for a reproducible data or classification problem and include the Federal Register document number.
+The refresh script downloads only the four public dataset files, verifies that each response is successful and writes a checksum manifest. Open an issue for a reproducible data or classification problem and include the Federal Register document number.
 
 ## Terms
 
