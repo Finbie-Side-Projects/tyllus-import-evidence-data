@@ -6,6 +6,7 @@ authors:
   - name: "Tyllus"
 version: "2026-10-04"
 date-released: 2026-10-05
+doi: "10.5281/zenodo.23147873"
 url: "https://www.tyllus.com/en/resources/us-import-evidence-change-radar"
 repository-code: "https://github.com/Finbie-Side-Projects/tyllus-import-evidence-data"
 keywords:
@@ -22,4 +23,5 @@ preferred-citation:
   authors:
     - name: "Tyllus"
   year: 2026
+  doi: "10.5281/zenodo.23147873"
   url: "https://www.tyllus.com/en/resources/us-import-evidence-change-radar"

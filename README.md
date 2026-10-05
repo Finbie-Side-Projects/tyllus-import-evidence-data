@@ -1,6 +1,6 @@
 # Tyllus U.S. Import Evidence Change Radar data
 
-This repository is the public, versioned distribution mirror for the [Tyllus U.S. Import Evidence Change Radar](https://www.tyllus.com/en/resources/us-import-evidence-change-radar). It makes the source-linked dataset easy to cite, download, inspect and reuse in research workflows.
+This repository is the public, versioned distribution mirror for the [Tyllus U.S. Import Evidence Change Radar](https://www.tyllus.com/en/resources/us-import-evidence-change-radar). It makes the source-linked dataset easy to cite, download and inspect. Review the dataset terms before reuse.
 
 The current snapshot contains **141 notices** from the U.S. Federal Register and was generated on **2026-10-04**. Tyllus maps each notice to operational evidence domains with a deterministic keyword taxonomy. Every record keeps its official notice URL.
 
@@ -24,7 +24,7 @@ Tyllus adds a transparent evidence-domain classification. These matches are disc
 
 ## Citation
 
-Use the repository's [`CITATION.cff`](CITATION.cff) or cite the live dataset:
+The snapshot is archived as [Zenodo record 23147873](https://zenodo.org/records/23147873), with version DOI [10.5281/zenodo.23147873](https://doi.org/10.5281/zenodo.23147873). Use the repository's [`CITATION.cff`](CITATION.cff) or cite the live dataset:
 
 > Tyllus. *U.S. Import Evidence Change Radar*. https://www.tyllus.com/en/resources/us-import-evidence-change-radar
 
