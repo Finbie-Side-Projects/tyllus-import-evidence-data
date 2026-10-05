@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: radar-data-refresh
@@ -20,6 +21,10 @@ jobs:
           python-version: "3.13"
       - name: Refresh public files
         run: python scripts/refresh.py
+      - name: Rebuild readable notice pages
+        run: python scripts/build_site.py
+      - name: Verify pages and data
+        run: python scripts/verify.py
       - name: Commit published changes
         run: |
           if git diff --quiet; then
@@ -28,6 +33,7 @@ jobs:
           fi
           git config user.name "tyllus-data-bot"
           git config user.email "team@tyllus.com"
-          git add data
+          git add data index.html en tr it es sitemap.xml
           git commit -m "Refresh Radar dataset"
           git push
+          GH_TOKEN="${{ github.token }}" gh api --method POST "repos/${{ github.repository }}/pages/builds"

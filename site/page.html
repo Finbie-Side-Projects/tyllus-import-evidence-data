@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="{{locale}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'"
+    />
+    <title>{{pageTitle}}</title>
+    <meta name="description" content="{{description}}" />
+    <link rel="canonical" href="{{canonical}}" />
+    {{alternateLinks}} {{rootRedirect}}
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{pageTitle}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:url" content="{{canonical}}" />
+    <link
+      rel="stylesheet"
+      href="{{prefix}}assets/styles.css?v={{styles_cssVersion}}"
+    />
+    <script src="{{prefix}}assets/theme.js?v={{theme_jsVersion}}"></script>
+    <script type="application/ld+json">
+      {{schemaJson}}
+    </script>
+    <script id="interface-strings" type="application/json">
+      {{interfaceJson}}
+    </script>
+    <script src="{{prefix}}assets/app.js?v={{app_jsVersion}}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#notices">{{skip}}</a>
+    <header class="site-header shell">
+      <a class="wordmark" href="https://www.tyllus.com/" aria-label="Tyllus"
+        ><span class="brand-symbol" aria-hidden="true">t</span>tyllus<span
+          class="brand-dot"
+          aria-hidden="true"
+          >.</span
+        ></a
+      >
+      <nav aria-label="{{explore}}">
+        <a href="#notices">{{explore}}</a><a href="#topics">{{topicTitle}}</a>
+      </nav>
+      <div class="preferences enhancement" hidden>
+        <label class="sr-only" for="language">{{language}}</label
+        ><select id="language" data-prefix="{{prefix}}">
+          {{localeOptions}}
+        </select>
+        <label class="sr-only" for="theme">{{theme}}</label
+        ><select id="theme">
+          <option value="light">{{light}}</option>
+          <option value="dark">{{dark}}</option>
+        </select>
+      </div>
+    </header>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-heading">
+        <div>
+          <p class="eyebrow">{{eyebrow}}</p>
+          <h1 id="page-heading">{{heading}}</h1>
+          <p class="intro">{{intro}}</p>
+        </div>
+        <div class="snapshot">
+          <div class="snapshot-heading">
+            <span class="snapshot-dot" aria-hidden="true"></span
+            >{{snapshot}}<time datetime="{{snapshotIso}}"
+              >{{snapshotDate}}</time
+            >
+          </div>
+          <div class="metrics">
+            <div><strong>{{noticeCount}}</strong><span>{{notices}}</span></div>
+            <div><strong>{{topicCount}}</strong><span>{{topics}}</span></div>
+          </div>
+          <p class="coverage">
+            <span>{{coverage}}</span><strong>{{coverageDates}}</strong>
+          </p>
+        </div>
+      </section>
+      <section id="notices" class="explorer" aria-labelledby="explorer-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">{{explore}}</p>
+            <h2 id="explorer-heading">{{explorerTitle}}</h2>
+            <p>{{explorerIntro}}</p>
+          </div>
+        </div>
+        <form id="filters" class="filters enhancement" hidden role="search">
+          <div class="search-field">
+            <label for="search">{{search}}</label>
+            <div class="input-wrap">
+              <span aria-hidden="true">⌕</span
+              ><input
+                id="search"
+                type="search"
+                placeholder="{{searchPlaceholder}}"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <details class="more-filters">
+            <summary>{{moreFilters}}</summary>
+            <div class="filter-row">
+              <div>
+                <label for="agency">{{agency}}</label
+                ><select id="agency">
+                  <option value="">{{allAgencies}}</option>
+                  {{agencyOptions}}
+                </select>
+              </div>
+              <div>
+                <label for="topic">{{topic}}</label
+                ><select id="topic">
+                  <option value="">{{allTopics}}</option>
+                  {{topicOptions}}
+                </select>
+              </div>
+              <div>
+                <label for="type">{{type}}</label
+                ><select id="type">
+                  <option value="">{{allTypes}}</option>
+                  {{typeOptions}}
+                </select>
+              </div>
+              <div>
+                <label for="sort">{{sort}}</label
+                ><select id="sort">
+                  <option value="newest">{{newest}}</option>
+                  <option value="oldest">{{oldest}}</option>
+                </select>
+              </div>
+            </div>
+          </details>
+          <div class="quick-searches" aria-label="{{quickSearch}}">
+            {{quickButtons}}
+          </div>
+        </form>
+        <section class="featured" aria-labelledby="featured-heading">
+          <h3 id="featured-heading">{{featuredTitle}}</h3>
+
+          <div class="featured-grid">{{featuredCards}}</div>
+        </section>
+        <div class="explorer-grid">
+          <div class="notice-column">
+            <div class="result-bar">
+              <p id="result-count" role="status" aria-live="polite">
+                {{initialResults}}
+              </p>
+              <button
+                id="reset"
+                class="text-button enhancement"
+                type="button"
+                hidden
+              >
+                {{reset}}
+              </button>
+            </div>
+            <p class="source-language">{{sourceLanguage}}</p>
+            <div id="notice-list">{{noticeCards}}</div>
+            <div id="empty" class="empty-state" hidden>
+              <h3>{{emptyTitle}}</h3>
+              <p>{{emptyText}}</p>
+              <button id="empty-reset" class="button secondary" type="button">
+                {{reset}}
+              </button>
+            </div>
+            <nav
+              id="pagination"
+              class="pagination enhancement"
+              hidden
+              aria-label="{{paginationLabel}}"
+            >
+              <button id="previous" type="button" class="button secondary">
+                ← {{previous}}</button
+              ><span id="page-count"></span
+              ><button id="next" type="button" class="button secondary">
+                {{next}} →
+              </button>
+            </nav>
+          </div>
+          <aside class="breakdowns">
+            <section id="topics" class="side-panel">
+              <h3>{{topicTitle}}</h3>
+              {{topicRows}}
+              <p class="side-note">{{topicNote}}</p>
+            </section>
+            <section class="side-panel">
+              <h3>{{agencyTitle}}</h3>
+              {{agencyRows}}
+            </section>
+          </aside>
+        </div>
+      </section>
+      <section
+        id="downloads"
+        class="information"
+        aria-labelledby="download-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">{{downloads}}</p>
+            <h2 id="download-heading">{{downloadTitle}}</h2>
+            <p>{{downloadIntro}}</p>
+          </div>
+        </div>
+        <div class="download-grid">
+          <a
+            class="download-card"
+            href="{{prefix}}data/us-import-evidence-change-radar.csv"
+            download
+            ><h3>{{csvTitle}} <span aria-hidden="true">↓</span></h3>
+            <p>{{csvText}}</p></a
+          ><a
+            class="download-card"
+            href="{{prefix}}data/us-import-evidence-change-radar.json"
+            download
+            ><h3>{{jsonTitle}} <span aria-hidden="true">↓</span></h3>
+            <p>{{jsonText}}</p></a
+          ><a
+            class="download-card"
+            href="{{prefix}}data/us-import-evidence-change-radar.dcat.json"
+            download
+            ><h3>{{dcatTitle}} <span aria-hidden="true">↓</span></h3>
+            <p>{{dcatText}}</p></a
+          ><a
+            class="download-card"
+            href="{{prefix}}data/us-import-evidence-change-radar.csv-metadata.json"
+            download
+            ><h3>{{csvwTitle}} <span aria-hidden="true">↓</span></h3>
+            <p>{{csvwText}}</p></a
+          >
+        </div>
+      </section>
+      <section class="citation" aria-labelledby="citation-heading">
+        <div>
+          <h2 id="citation-heading">{{citationTitle}}</h2>
+          <p>{{citationText}}</p>
+          <a href="https://doi.org/10.5281/zenodo.23147873"
+            >10.5281/zenodo.23147873 ↗</a
+          >
+        </div>
+        <div class="citation-actions">
+          <a href="https://zenodo.org/records/23147873">{{archive}} ↗</a
+          ><a href="{{prefix}}CITATION.cff">{{cite}} ↓</a
+          ><a
+            href="https://github.com/Finbie-Side-Projects/tyllus-import-evidence-data/blob/main/DATA-USAGE.md"
+            >{{terms}} ↗</a
+          >
+        </div>
+      </section>
+      <details id="methodology" class="information methodology-details">
+        <summary>{{methodology}}</summary>
+        <div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">{{methodology}}</p>
+              <h2 id="method-heading">{{methodTitle}}</h2>
+              <p>{{methodIntro}}</p>
+            </div>
+          </div>
+          <div class="method-grid">
+            <article>
+              <h3>{{methodSourceTitle}}</h3>
+              <p>{{methodSourceText}}</p>
+            </article>
+            <article>
+              <h3>{{methodMappingTitle}}</h3>
+              <p>{{methodMappingText}}</p>
+            </article>
+            <article>
+              <h3>{{methodDatesTitle}}</h3>
+              <p>{{methodDatesText}}</p>
+            </article>
+            <article>
+              <h3>{{methodLimitTitle}}</h3>
+              <p>{{methodLimitText}}</p>
+            </article>
+          </div>
+          <div class="provenance-links">
+            <a href="{{prefix}}data/manifest.json">{{manifest}} ↗</a
+            ><a
+              href="https://github.com/Finbie-Side-Projects/tyllus-import-evidence-data"
+              >{{history}} ↗</a
+            >
+          </div>
+        </div>
+      </details>
+    </main>
+    <footer class="shell site-footer">
+      <p>{{footer}}</p>
+      <a
+        href="https://www.tyllus.com/{{locale}}/resources/us-import-evidence-change-radar"
+        >{{tyllusRadar}} ↗</a
+      >
+      <div class="footer-languages" aria-label="{{language}}">
+        <a href="{{prefix}}en/" lang="en">English</a
+        ><a href="{{prefix}}tr/" lang="tr">Türkçe</a
+        ><a href="{{prefix}}it/" lang="it">Italiano</a
+        ><a href="{{prefix}}es/" lang="es">Español</a>
+      </div>
+    </footer>
+  </body>
+</html>
