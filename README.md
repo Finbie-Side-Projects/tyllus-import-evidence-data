@@ -2,7 +2,7 @@
 
 This repository is the public, versioned distribution mirror for the [Tyllus U.S. Import Evidence Change Radar](https://www.tyllus.com/en/resources/us-import-evidence-change-radar). The [public website](https://finbie-side-projects.github.io/tyllus-import-evidence-data/en/) lets readers search by product or country, browse topics, and read the notices directly. It includes plain summaries of selected customs updates, full original notice text, dates and links. Review the dataset terms before reuse.
 
-The current snapshot contains **141 notices** from the U.S. Federal Register and was generated on **2026-10-04**. Tyllus maps each notice to operational evidence domains with a deterministic keyword taxonomy. Every record keeps its official notice URL.
+The [current manifest](data/manifest.json) gives the latest snapshot date, record count and checksums. Tyllus maps each notice to operational evidence domains with a deterministic keyword taxonomy. Every record keeps its official notice URL.
 
 ## Download
 
