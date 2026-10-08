@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from feeds import build_feeds
 from site_render import date_text, options, render_breakdowns, render_notice, text, time_tag, type_label
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,6 +73,7 @@ def build_page(locale, dataset, root=False):
 
 def main():
     dataset = json.loads((ROOT / 'data' / 'us-import-evidence-change-radar.json').read_text())
+    build_feeds(ROOT, dataset)
     for locale in LOCALES:
         directory = ROOT / locale
         directory.mkdir(exist_ok=True)

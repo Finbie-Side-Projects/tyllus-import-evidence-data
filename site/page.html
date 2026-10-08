@@ -11,6 +11,8 @@
     <title>{{pageTitle}}</title>
     <meta name="description" content="{{description}}" />
     <link rel="canonical" href="{{canonical}}" />
+    <link rel="alternate" type="application/rss+xml" title="{{rssTitle}}" href="{{prefix}}feeds/notices.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ustrRssTitle}}" href="{{prefix}}feeds/ustr.xml" />
     {{alternateLinks}} {{rootRedirect}}
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="website" />
@@ -231,6 +233,11 @@
             <p>{{csvwText}}</p></a
           >
         </div>
+        <div class="citation-actions">
+          <a href="{{prefix}}feeds/notices.xml">{{rssTitle}} ↗</a>
+          <a href="{{prefix}}feeds/ustr.xml">{{ustrRssTitle}} ↗</a>
+        </div>
+        <p>{{rssText}}</p>
       </section>
       <section class="citation" aria-labelledby="citation-heading">
         <div>

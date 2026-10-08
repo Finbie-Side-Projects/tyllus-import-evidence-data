@@ -148,5 +148,8 @@
     "Vietnam"
   ],
   "moreFilters": "Diğer filtreler",
-  "paginationLabel": "Bildirim sayfaları"
+  "paginationLabel": "Bildirim sayfaları",
+  "rssTitle": "Seçilmiş bildirimler / RSS",
+  "ustrRssTitle": "USTR bildirimleri / RSS",
+  "rssText": "Bu seçkideki en yeni 50 bildirimi RSS okuyucunuzda takip edin. USTR akışı yalnızca USTR kayıtlarını içerir. Başlıklar ve resmi özetler İngilizce kalır; akışlar veri kümesiyle birlikte yenilenir ve tüm mevzuat değişikliklerini kapsayan bir bildirim hizmeti değildir."
 }

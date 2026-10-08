@@ -8,6 +8,8 @@ import subprocess
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, unquote
+from xml.etree import ElementTree as ET
+from feeds import FEEDS, render_feed, selected_notices
 from build_site import ROOT, LOCALES, build_page
 
 
@@ -44,6 +46,18 @@ def require(condition, message):
 def main():
     payload = json.loads((ROOT / 'data/us-import-evidence-change-radar.json').read_text())
     notices = payload['notices']
+    for filename, (_, agency) in FEEDS.items():
+        contents = (ROOT / 'feeds' / filename).read_bytes()
+        require(contents == render_feed(payload, filename), f'Stale RSS feed: {filename}')
+        channel = ET.fromstring(contents).find('channel')
+        require(all(channel.findtext(field) for field in ('title', 'link', 'description')), f'Missing RSS channel metadata: {filename}')
+        items = channel.findall('item')
+        selected = selected_notices(payload, agency)
+        require(len(items) == len(selected), f'RSS record count mismatch: {filename}')
+        require(len({item.findtext('guid') for item in items}) == len(items), f'Duplicate RSS GUIDs: {filename}')
+        for item, notice in zip(items, selected):
+            require(item.findtext('link') == notice['officialUrl'] and item.findtext('title') == notice['title'], f'RSS source mismatch: {filename}')
+            require(item.find('pubDate') is None, f'Invented publication time: {filename}')
     require(bool(notices), 'Dataset must contain real notices.')
     expected = {f'notice-{n["id"]}' for n in notices}
     require(len(expected) == len(notices), 'Duplicate notice IDs in dataset.')

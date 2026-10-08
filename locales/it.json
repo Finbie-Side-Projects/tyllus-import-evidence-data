@@ -148,5 +148,8 @@
     "Vietnam"
   ],
   "moreFilters": "Altri filtri",
-  "paginationLabel": "Pagine degli avvisi"
+  "paginationLabel": "Pagine degli avvisi",
+  "rssTitle": "Avvisi selezionati / RSS",
+  "ustrRssTitle": "Avvisi USTR / RSS",
+  "rssText": "Segui fino a 50 avvisi recenti di questa selezione in un lettore RSS. Il feed USTR include solo i record USTR. Titoli e abstract ufficiali restano in inglese; i feed vengono aggiornati insieme al dataset e non sono un servizio completo di avvisi normativi."
 }
