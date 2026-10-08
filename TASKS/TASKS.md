@@ -4,3 +4,4 @@
 - [x] [0002-refresh-2026-10-05-snapshot.md](0002-refresh-2026-10-05-snapshot.md) — Publish the 5 October public snapshot and verify its official notice links and live explorer.
 - [x] [0003-keep-current-public-snapshot.md](0003-keep-current-public-snapshot.md) — Refresh the current public snapshot and remove stale hard-coded README counts.
 - [x] [0004-sync-public-metadata.md](0004-sync-public-metadata.md) — Synchronize changed source metadata and remove the stale architecture count.
+- [x] [0005-refresh-2026-10-08-snapshot.md](0005-refresh-2026-10-08-snapshot.md) — Publish the current 156-notice snapshot, verify the live explorer, and archive its distribution in a dated release.
