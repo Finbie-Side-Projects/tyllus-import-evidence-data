@@ -8,6 +8,7 @@ BASE_URL = 'https://finbie-side-projects.github.io/tyllus-import-evidence-data/'
 FEEDS = {
     'notices.xml': ('Selected U.S. import notices', None),
     'ustr.xml': ('Selected USTR notices', 'trade-representative-office-of-united-states'),
+    'cbp.xml': ('Selected CBP notices', 'u-s-customs-and-border-protection'),
 }
 LIMIT = 50
 ATOM = 'http://www.w3.org/2005/Atom'

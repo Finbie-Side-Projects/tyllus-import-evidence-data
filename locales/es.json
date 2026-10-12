@@ -151,5 +151,6 @@
   "paginationLabel": "Páginas de avisos",
   "rssTitle": "Avisos seleccionados / RSS",
   "ustrRssTitle": "Avisos de USTR / RSS",
-  "rssText": "Sigue hasta 50 avisos recientes de esta selección en un lector RSS. El canal de USTR incluye solo registros de USTR. Los títulos y resúmenes oficiales permanecen en inglés; los canales se actualizan con el conjunto de datos y no son un servicio completo de alertas normativas."
+  "cbpRssTitle": "Avisos de CBP / RSS",
+  "rssText": "Sigue hasta 50 avisos recientes de esta selección en un lector RSS. Los canales de las agencias incluyen solo registros de USTR o CBP, respectivamente. Los títulos y resúmenes oficiales permanecen en inglés; los canales se actualizan con el conjunto de datos y no son un servicio completo de alertas normativas."
 }

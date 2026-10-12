@@ -151,5 +151,6 @@
   "paginationLabel": "Notice pages",
   "rssTitle": "Selected notices / RSS",
   "ustrRssTitle": "USTR notices / RSS",
-  "rssText": "Follow up to 50 recent notices from this selection in a feed reader. The USTR feed includes only USTR records. Titles and official abstracts stay in English; feeds are refreshed with the dataset and are not a complete regulatory alert service."
+  "cbpRssTitle": "CBP notices / RSS",
+  "rssText": "Follow up to 50 recent notices from this selection in a feed reader. Agency feeds include only USTR or CBP records, respectively. Titles and official abstracts stay in English; feeds are refreshed with the dataset and are not a complete regulatory alert service."
 }

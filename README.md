@@ -15,6 +15,7 @@ The [current manifest](data/manifest.json) gives the latest snapshot date, recor
 | [Manifest](data/manifest.json)                                 | Capture time, record count, source URLs and SHA-256 checksums |
 | [RSS — selected notices](feeds/notices.xml)                   | Up to 50 recent notices in the current selection, for feed readers |
 | [RSS — USTR](feeds/ustr.xml)                                  | The same format, limited to USTR notices in the selection |
+| [RSS — CBP](feeds/cbp.xml)                                    | The same format, limited to CBP notices in the selection |
 
 The RSS feeds retain original English titles and abstracts, document IDs, publication dates, official notice/PDF links and the corresponding Tyllus Radar record. Stable document identifiers let readers recognize notices already seen. A feed is refreshed with each dataset build and is not a comprehensive regulatory alert service. Source publication dates have no exact time, so item timestamps are omitted rather than invented.
 

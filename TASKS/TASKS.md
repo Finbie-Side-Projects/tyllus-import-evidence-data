@@ -7,3 +7,4 @@
 - [x] [0005-refresh-2026-10-08-snapshot.md](0005-refresh-2026-10-08-snapshot.md) — Publish the current 156-notice snapshot, verify the live explorer, and archive its distribution in a dated release.
 - [x] [0006-rss-and-evening-snapshot.md](0006-rss-and-evening-snapshot.md) — Publish RSS distributions and the 163-record evening snapshot; verify live feeds and search.
 - [x] [0007-refresh-2026-10-12-metadata.md](0007-refresh-2026-10-12-metadata.md) — Synchronize changed snapshot metadata and feeds while preserving 163 unchanged records.
+- [ ] [0008-cbp-specific-feed.md](0008-cbp-specific-feed.md) — Publish a CBP-only RSS distribution for customs notice readers and verify its live sources and localized discovery.
