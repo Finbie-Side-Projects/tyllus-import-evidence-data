@@ -9,4 +9,4 @@
 - [x] [0007-refresh-2026-10-12-metadata.md](0007-refresh-2026-10-12-metadata.md) — Synchronize changed snapshot metadata and feeds while preserving 163 unchanged records.
 - [x] [0008-cbp-specific-feed.md](0008-cbp-specific-feed.md) — Publish a CBP-only RSS distribution for customs notice readers and verify its live sources and localized discovery.
 
-- [ ] [0009-refresh-2026-10-15-snapshot.md](0009-refresh-2026-10-15-snapshot.md) — Publish the 167-record current selection and verify its official sources, three feeds and live explorer.
+- [x] [0009-refresh-2026-10-15-snapshot.md](0009-refresh-2026-10-15-snapshot.md) — Publish the 167-record current selection and verify its official sources, three feeds and live explorer.
