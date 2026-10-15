@@ -5,8 +5,16 @@
     <link>https://finbie-side-projects.github.io/tyllus-import-evidence-data/en/</link>
     <description>Up to 50 latest notices in the current Tyllus selection, with original Federal Register titles and abstracts. Non-exhaustive discovery aid; verify official sources before acting. Dataset terms: https://www.tyllus.com/en/terms-of-use</description>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2026 06:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 06:00:00 GMT</lastBuildDate>
     <atom:link href="https://finbie-side-projects.github.io/tyllus-import-evidence-data/feeds/cbp.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advance Traveler Information for Rail</title>
+      <link>https://www.federalregister.gov/documents/2026/10/13/2026-20884/advance-traveler-information-for-rail</link>
+      <guid isPermaLink="false">urn:federal-register:2026-20884</guid>
+      <category>U.S. Customs and Border Protection</category>
+      <category>Proposed Rule</category>
+      <description>&lt;p&gt;Document: 2026-20884; Published: 2026-10-13; Comments close: 2026-12-14&lt;/p&gt;&lt;p&gt;U.S. Customs and Border Protection (CBP) is proposing to require rail carriers to transmit advance electronic traveler information to CBP for any individual (crew and passengers) who is arriving in or departing from the United States on board a train. The rail carrier also would be required to transmit an advance notice of arrival or departure, as applicable, for the train. This rule would enhance security while facilitating legitimate international travel on board trains.&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.govinfo.gov/content/pkg/FR-2026-10-13/pdf/2026-20884.pdf"&gt;Official PDF&lt;/a&gt; · &lt;a href="https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20884"&gt;Dates and context in Tyllus Radar&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Low-Value Shipments</title>
       <link>https://www.federalregister.gov/documents/2026/10/08/2026-20650/low-value-shipments</link>
