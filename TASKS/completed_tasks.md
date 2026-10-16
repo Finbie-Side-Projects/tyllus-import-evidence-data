@@ -12,3 +12,5 @@
 - `0009-refresh-2026-10-15-snapshot.md` — Completed 15 October 2026. Published 167 current selected records (nine added, five absent, retained records unchanged), verified all new official PDFs, stable overlapping RSS identifiers, twelve live files and explorer search/CBP/reset flows. Archived the exact distribution in the dated release.
 
 - `0010-share-and-export-selection.md` — Completed 16 October 2026. Published validated, restorable filter links and matching CSV/JSON exports in four locales. Actual browser downloads verified complete multipage selections, exact original JSON records, selected sort order and source provenance; empty-state and language-context behavior passed.
+
+- `0011-sync-metadata-and-feed-publication.md` — Completed16October2026. Synchronized changed source metadata while retaining167identical records and stable RSS items, fixed the refresh workflow to stage generated feeds with data/pages, and verified successful Pages publication plus15matching live files.

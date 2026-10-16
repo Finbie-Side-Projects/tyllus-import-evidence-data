@@ -13,4 +13,4 @@
 
 - [x] [0010-share-and-export-selection.md](0010-share-and-export-selection.md) — Publish restorable source selections and matching CSV/JSON exports.
 
-- [ ] [0011-sync-metadata-and-feed-publication.md](0011-sync-metadata-and-feed-publication.md) — Synchronize current source metadata and commit generated feeds with each refresh.
+- [x] [0011-sync-metadata-and-feed-publication.md](0011-sync-metadata-and-feed-publication.md) — Synchronize current source metadata and commit generated feeds with each refresh.
