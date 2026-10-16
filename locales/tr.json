@@ -152,5 +152,10 @@
   "rssTitle": "Seçilmiş bildirimler / RSS",
   "ustrRssTitle": "USTR bildirimleri / RSS",
   "cbpRssTitle": "CBP bildirimleri / RSS",
-  "rssText": "Bu seçkideki en yeni 50 bildirimi RSS okuyucunuzda takip edin. Kurum akışları sırasıyla yalnızca USTR veya CBP kayıtlarını içerir. Başlıklar ve resmi özetler İngilizce kalır; akışlar veri kümesiyle birlikte yenilenir ve tüm mevzuat değişikliklerini kapsayan bir bildirim hizmeti değildir."
+  "rssText": "Bu seçkideki en yeni 50 bildirimi RSS okuyucunuzda takip edin. Kurum akışları sırasıyla yalnızca USTR veya CBP kayıtlarını içerir. Başlıklar ve resmi özetler İngilizce kalır; akışlar veri kümesiyle birlikte yenilenir ve tüm mevzuat değişikliklerini kapsayan bir bildirim hizmeti değildir.",
+  "selectionActions": "Bu sonuçları kullan",
+  "shareSelection": "Bu sonuçlara bağlantı",
+  "selectionCsv": "Sonuçları indir · CSV",
+  "selectionJson": "Sonuçları indir · JSON",
+  "selectionHint": "Dışa aktarma, tüm sayfalardaki eşleşen sonuçları içerir. CSV e-tabloya uygundur; JSON kaynak değerlerini olduğu gibi korur."
 }

@@ -10,3 +10,5 @@
 - [x] [0008-cbp-specific-feed.md](0008-cbp-specific-feed.md) — Publish a CBP-only RSS distribution for customs notice readers and verify its live sources and localized discovery.
 
 - [x] [0009-refresh-2026-10-15-snapshot.md](0009-refresh-2026-10-15-snapshot.md) — Publish the 167-record current selection and verify its official sources, three feeds and live explorer.
+
+- [ ] [0010-share-and-export-selection.md](0010-share-and-export-selection.md) — Publish restorable source selections and matching CSV/JSON exports.

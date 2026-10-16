@@ -2,6 +2,13 @@
   const strings = JSON.parse(
     document.getElementById("interface-strings").textContent,
   );
+  const dataset = JSON.parse(
+    document.getElementById("notice-data").textContent,
+  );
+  const sourceById = new Map(
+    dataset.notices.map((notice) => [notice.id, notice]),
+  );
+  const selection = window.TyllusSelection;
   const cards = Array.from(document.querySelectorAll(".notice"));
   const pageSize = 12;
   const fields = Object.fromEntries(
@@ -18,7 +25,15 @@
       .replace(/\bturkey\b/g, "turkiye");
   const records = cards.map((card) => ({
     card,
-    search: normalize(card.dataset.search),
+    source: sourceById.get(card.id.slice(7)),
+    search: normalize(
+      card.textContent +
+        " " +
+        sourceById
+          .get(card.id.slice(7))
+          .evidenceDomains.flatMap((domain) => domain.matchedTerms)
+          .join(" "),
+    ),
     agency: card.dataset.agency,
     topics: card.dataset.topics.split(" "),
     type: card.dataset.type,
@@ -34,6 +49,16 @@
   const pagination = document.getElementById("pagination");
   const previous = document.getElementById("previous");
   const next = document.getElementById("next");
+
+  function currentFilters() {
+    return {
+      q: fields.search.value.trim().slice(0, 1000),
+      agency: fields.agency.value,
+      topic: fields.topic.value,
+      type: fields.type.value,
+      sort: fields.sort.value,
+    };
+  }
 
   function render() {
     const totalPages = Math.max(1, Math.ceil(matching.length / pageSize));
@@ -77,6 +102,13 @@
         String(fields[button.dataset.filter].value === button.dataset.value),
       );
     });
+    document.getElementById("selection-link").href = selection.selectionUrl(
+      window.location.href,
+      currentFilters(),
+    );
+    ["selection-csv", "selection-json"].forEach((id) => {
+      document.getElementById(id).disabled = matching.length === 0;
+    });
     document.getElementById("reset").disabled =
       !fields.search.value &&
       !fields.agency.value &&
@@ -87,6 +119,8 @@
 
   function filter() {
     clearTimeout(queryTimer);
+    queryTimer = null;
+    fields.search.value = fields.search.value.slice(0, 1000);
     const terms = normalize(fields.search.value.trim())
       .split(/\s+/)
       .filter(Boolean);
@@ -176,7 +210,16 @@
   const language = document.getElementById("language");
   language.value = document.documentElement.lang;
   language.addEventListener("change", () => {
-    window.location.href = `${language.dataset.prefix}${language.value}/`;
+    const destination = new URL(
+      `${language.dataset.prefix}${language.value}/`,
+      window.location.href,
+    );
+    const url = new URL(
+      selection.selectionUrl(destination.href, currentFilters()),
+    );
+    if (/^#notice-[\w-]+$/.test(window.location.hash))
+      url.hash = window.location.hash;
+    window.location.href = url.href;
   });
   const theme = document.getElementById("theme");
   theme.value = document.documentElement.dataset.theme;
@@ -188,6 +231,54 @@
       /* Optional preference persistence. */
     }
   });
+  document.getElementById("selection-link").addEventListener("click", () => {
+    if (queryTimer) filter();
+  });
+  function downloadSelection(kind) {
+    if (queryTimer) filter();
+    if (!matching.length) return;
+    const selected = matching.map((record) => record.source);
+    const url = selection.selectionUrl(window.location.href, currentFilters());
+    const content =
+      kind === "csv"
+        ? selection.toCsv(selected)
+        : JSON.stringify(
+            selection.selectedDataset(dataset, selected, currentFilters(), url),
+            null,
+            2,
+          ) + "\n";
+    const blob = new Blob([content], {
+      type:
+        kind === "csv"
+          ? "text/csv;charset=utf-8"
+          : "application/json;charset=utf-8",
+    });
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = `tyllus-import-evidence-selection.${kind}`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+  }
+  ["csv", "json"].forEach((kind) =>
+    document
+      .getElementById(`selection-${kind}`)
+      .addEventListener("click", () => downloadSelection(kind)),
+  );
+  const restored = selection.readSelection(
+    window.location.search,
+    Object.fromEntries(
+      ["agency", "topic", "type", "sort"].map((key) => [
+        key,
+        Array.from(fields[key].options, (option) => option.value),
+      ]),
+    ),
+  );
+  fields.search.value = restored.q;
+  for (const key of ["agency", "topic", "type", "sort"])
+    if (restored[key]) fields[key].value = restored[key];
   document.querySelectorAll(".enhancement").forEach((element) => {
     element.hidden = false;
   });

@@ -152,5 +152,10 @@
   "rssTitle": "Avisos seleccionados / RSS",
   "ustrRssTitle": "Avisos de USTR / RSS",
   "cbpRssTitle": "Avisos de CBP / RSS",
-  "rssText": "Sigue hasta 50 avisos recientes de esta selección en un lector RSS. Los canales de las agencias incluyen solo registros de USTR o CBP, respectivamente. Los títulos y resúmenes oficiales permanecen en inglés; los canales se actualizan con el conjunto de datos y no son un servicio completo de alertas normativas."
+  "rssText": "Sigue hasta 50 avisos recientes de esta selección en un lector RSS. Los canales de las agencias incluyen solo registros de USTR o CBP, respectivamente. Los títulos y resúmenes oficiales permanecen en inglés; los canales se actualizan con el conjunto de datos y no son un servicio completo de alertas normativas.",
+  "selectionActions": "Usar estos resultados",
+  "shareSelection": "Enlace a estos resultados",
+  "selectionCsv": "Exportar resultados · CSV",
+  "selectionJson": "Exportar resultados · JSON",
+  "selectionHint": "Las exportaciones incluyen todas las coincidencias de todas las páginas. El CSV es apto para hojas de cálculo; el JSON conserva los valores originales de la fuente."
 }

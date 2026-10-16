@@ -52,9 +52,10 @@ def build_page(locale, dataset, root=False):
         'localeOptions': options(strings['languageLabels'].items()),
         'initialResults': text(strings['results'].replace('{start}', '1').replace('{end}', str(len(notices))).replace('{count}', str(len(notices)))),
         'interfaceJson': json.dumps(strings, ensure_ascii=False).replace('<', '\\u003c'),
+        'datasetJson': json.dumps(dataset, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c'),
         'alternateLinks': '\n'.join(f'<link rel="alternate" hreflang="{code}" href="{BASE_URL}{code}/" />' for code in LOCALES),
     })
-    for asset in ('styles.css', 'app.js', 'theme.js'):
+    for asset in ('styles.css', 'app.js', 'theme.js', 'selection.js'):
         context[asset.replace('.', '_') + 'Version'] = hashlib.sha256((ROOT / 'assets' / asset).read_bytes()).hexdigest()[:12]
     schema = {
         '@context': 'https://schema.org', '@type': 'Dataset',

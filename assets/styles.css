@@ -1021,3 +1021,21 @@ h1 {
     padding-top: 18px;
   }
 }
+
+.selection-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+}
+.selection-actions p {
+  flex-basis: 100%;
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.selection-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -11,9 +11,24 @@
     <title>{{pageTitle}}</title>
     <meta name="description" content="{{description}}" />
     <link rel="canonical" href="{{canonical}}" />
-    <link rel="alternate" type="application/rss+xml" title="{{rssTitle}}" href="{{prefix}}feeds/notices.xml" />
-    <link rel="alternate" type="application/rss+xml" title="{{ustrRssTitle}}" href="{{prefix}}feeds/ustr.xml" />
-    <link rel="alternate" type="application/rss+xml" title="{{cbpRssTitle}}" href="{{prefix}}feeds/cbp.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{rssTitle}}"
+      href="{{prefix}}feeds/notices.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ustrRssTitle}}"
+      href="{{prefix}}feeds/ustr.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{cbpRssTitle}}"
+      href="{{prefix}}feeds/cbp.xml"
+    />
     {{alternateLinks}} {{rootRedirect}}
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="website" />
@@ -31,6 +46,13 @@
     <script id="interface-strings" type="application/json">
       {{interfaceJson}}
     </script>
+    <script id="notice-data" type="application/json">
+      {{datasetJson}}
+    </script>
+    <script
+      src="{{prefix}}assets/selection.js?v={{selection_jsVersion}}"
+      defer
+    ></script>
     <script src="{{prefix}}assets/app.js?v={{app_jsVersion}}" defer></script>
   </head>
   <body>
@@ -97,6 +119,7 @@
               ><input
                 id="search"
                 type="search"
+                maxlength="1000"
                 placeholder="{{searchPlaceholder}}"
                 autocomplete="off"
               />
@@ -158,6 +181,26 @@
               >
                 {{reset}}
               </button>
+            </div>
+            <div
+              class="selection-actions enhancement"
+              hidden
+              aria-label="{{selectionActions}}"
+            >
+              <a id="selection-link" class="button secondary" href="./"
+                >{{shareSelection}}</a
+              >
+              <button id="selection-csv" class="button secondary" type="button">
+                {{selectionCsv}}
+              </button>
+              <button
+                id="selection-json"
+                class="button secondary"
+                type="button"
+              >
+                {{selectionJson}}
+              </button>
+              <p>{{selectionHint}}</p>
             </div>
             <p class="source-language">{{sourceLanguage}}</p>
             <div id="notice-list">{{noticeCards}}</div>

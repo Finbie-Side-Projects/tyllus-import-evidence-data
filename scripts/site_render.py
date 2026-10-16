@@ -53,8 +53,7 @@ def render_notice(notice, strings):
     docket = ', '.join(notice.get('docketIds', [])) or strings['notSupplied']
     action = f'<div><dt>{s["action"]}</dt><dd lang="en">{text(notice["action"])}</dd></div>' if notice.get('action') else ''
     pdf = f'<a href="{text(notice["pdfUrl"])}" target="_blank" rel="noopener noreferrer">{s["officialPdf"]}<span aria-hidden="true"> ↗</span></a>' if notice.get('pdfUrl') else ''
-    search = ' '.join([notice['title'], abstract, notice['id'], notice['agency'], docket] + [term for d in domains for term in d['matchedTerms']])
-    return f'''<article class="notice" id="notice-{text(notice['id'])}" data-agency="{text(notice['agencySlug'])}" data-topics="{text(' '.join(d['id'] for d in domains))}" data-type="{text(notice['sourceType'])}" data-date="{text(notice['publicationDate'])}" data-search="{text(search)}">
+    return f'''<article class="notice" id="notice-{text(notice['id'])}" data-agency="{text(notice['agencySlug'])}" data-topics="{text(' '.join(d['id'] for d in domains))}" data-type="{text(notice['sourceType'])}" data-date="{text(notice['publicationDate'])}">
 <div class="notice-meta">{time_tag(notice['publicationDate'], strings)}<span class="type">{text(type_label(notice['sourceType'], strings))}</span><span class="document-id">{text(notice['id'])}</span></div>
 <p class="notice-agency" lang="en">{text(notice['agency'])}</p>
 <h3 lang="en"><a href="{text(notice['officialUrl'])}" target="_blank" rel="noopener noreferrer">{text(heading)}<span aria-hidden="true"> ↗</span></a></h3>{change_html}

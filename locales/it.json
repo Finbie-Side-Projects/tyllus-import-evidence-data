@@ -152,5 +152,10 @@
   "rssTitle": "Avvisi selezionati / RSS",
   "ustrRssTitle": "Avvisi USTR / RSS",
   "cbpRssTitle": "Avvisi CBP / RSS",
-  "rssText": "Segui fino a 50 avvisi recenti di questa selezione in un lettore RSS. I feed delle agenzie includono solo i record USTR o CBP, rispettivamente. Titoli e abstract ufficiali restano in inglese; i feed vengono aggiornati insieme al dataset e non sono un servizio completo di avvisi normativi."
+  "rssText": "Segui fino a 50 avvisi recenti di questa selezione in un lettore RSS. I feed delle agenzie includono solo i record USTR o CBP, rispettivamente. Titoli e abstract ufficiali restano in inglese; i feed vengono aggiornati insieme al dataset e non sono un servizio completo di avvisi normativi.",
+  "selectionActions": "Usa questi risultati",
+  "shareSelection": "Link a questi risultati",
+  "selectionCsv": "Esporta risultati · CSV",
+  "selectionJson": "Esporta risultati · JSON",
+  "selectionHint": "Le esportazioni includono tutti i risultati corrispondenti, su tutte le pagine. Il CSV è adatto ai fogli di calcolo; il JSON conserva i valori originali della fonte."
 }

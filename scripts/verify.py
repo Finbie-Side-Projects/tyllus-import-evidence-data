@@ -69,6 +69,8 @@ def main():
         path = ROOT / relative
         contents = path.read_text()
         require(contents == build_page(locale, payload, root), f'Generated page is stale: {relative}')
+        embedded = json.loads(re.search(r'<script id="notice-data" type="application/json">(.*?)</script>', contents, re.S).group(1))
+        require(embedded == payload, f'Embedded export dataset differs from source: {relative}')
         require('Human-readable source' not in contents, f'Unwanted heading in {relative}')
         page = Page()
         page.feed(contents)
@@ -97,8 +99,9 @@ def main():
     with (ROOT / 'data/us-import-evidence-change-radar.csv').open(newline='') as f:
         rows = list(csv.DictReader(f))
     require(len(rows) == len(notices), 'CSV/JSON record counts differ.')
-    for asset in ('app.js', 'theme.js'):
+    for asset in ('app.js', 'theme.js', 'selection.js'):
         subprocess.run(['node', '--check', str(ROOT / 'assets' / asset)], check=True)
+    subprocess.run(['node', '--test', str(ROOT / 'scripts/selection.test.cjs')], check=True)
     files = subprocess.check_output(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT).decode().split('\0')
     secret_patterns = [r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', r'gh[pousr]_[A-Za-z0-9]{30,}', r'AIza[0-9A-Za-z_-]{35}', r'sk-(?:proj-)?[A-Za-z0-9_-]{30,}', r'Authorization\s*:\s*[\"\x27]?Bearer\s+[A-Za-z0-9._-]{20,}', r'(?:live|test)_[A-Za-z0-9]{32,}']
     for filename in filter(None, files):

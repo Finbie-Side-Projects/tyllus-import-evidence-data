@@ -152,5 +152,10 @@
   "rssTitle": "Selected notices / RSS",
   "ustrRssTitle": "USTR notices / RSS",
   "cbpRssTitle": "CBP notices / RSS",
-  "rssText": "Follow up to 50 recent notices from this selection in a feed reader. Agency feeds include only USTR or CBP records, respectively. Titles and official abstracts stay in English; feeds are refreshed with the dataset and are not a complete regulatory alert service."
+  "rssText": "Follow up to 50 recent notices from this selection in a feed reader. Agency feeds include only USTR or CBP records, respectively. Titles and official abstracts stay in English; feeds are refreshed with the dataset and are not a complete regulatory alert service.",
+  "selectionActions": "Use these results",
+  "shareSelection": "Link to these results",
+  "selectionCsv": "Export results · CSV",
+  "selectionJson": "Export results · JSON",
+  "selectionHint": "Exports include every matching result, across all pages. CSV is spreadsheet-safe; JSON preserves original source values."
 }
