@@ -1,4 +1,4 @@
-[TODO]
+[DONE]
 
 # Share and export source selections
 
@@ -8,4 +8,4 @@ Keep export selection independent of pagination. Preserve original JSON records 
 
 Verify local behavior, official source agreement, publication and live filtered exports before completion.
 
-Local verification passed: five focused selection/export tests plus all repository checks. Actual Chrome downloads verified16exact CBP records in oldest-first order, agreement of CSV and JSON, a one-record original JSON export, and all16records when downloading from page2without resetting the current page. Empty results disable both exports; EN/TR/IT/ES retain filter context and show localized controls. Live publication remains to be verified.
+Local verification passed: five focused selection/export tests plus all repository checks. Actual Chrome downloads verified16exact CBP records in oldest-first order, agreement of CSV and JSON, a one-record original JSON export, and all16records when downloading from page2without resetting the current page. Empty results disable both exports; EN/TR/IT/ES retain filter context and show localized controls. Published as bb448baaefb4900d6a62d09f22690f93bd14ab12 with successful Pages build https://github.com/Finbie-Side-Projects/tyllus-import-evidence-data/actions/runs/38959653331. The live single-record link restores the selected notice and its actual browser JSON download agrees with the source. Full four-locale, metadata and feed verification is recorded in the run log.

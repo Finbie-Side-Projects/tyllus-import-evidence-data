@@ -11,4 +11,6 @@
 
 - [x] [0009-refresh-2026-10-15-snapshot.md](0009-refresh-2026-10-15-snapshot.md) — Publish the 167-record current selection and verify its official sources, three feeds and live explorer.
 
-- [ ] [0010-share-and-export-selection.md](0010-share-and-export-selection.md) — Publish restorable source selections and matching CSV/JSON exports.
+- [x] [0010-share-and-export-selection.md](0010-share-and-export-selection.md) — Publish restorable source selections and matching CSV/JSON exports.
+
+- [ ] [0011-sync-metadata-and-feed-publication.md](0011-sync-metadata-and-feed-publication.md) — Synchronize current source metadata and commit generated feeds with each refresh.

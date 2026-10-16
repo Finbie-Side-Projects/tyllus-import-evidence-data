@@ -10,3 +10,5 @@
 - `0008-cbp-specific-feed.md` — Completed 12 October 2026. Published the 15-notice CBP feed with localized discovery, clarified original abstracts versus official full notices, and verified successful builds, live file agreement and search/filter behavior. The public dataset and previous two feeds remained unchanged.
 
 - `0009-refresh-2026-10-15-snapshot.md` — Completed 15 October 2026. Published 167 current selected records (nine added, five absent, retained records unchanged), verified all new official PDFs, stable overlapping RSS identifiers, twelve live files and explorer search/CBP/reset flows. Archived the exact distribution in the dated release.
+
+- `0010-share-and-export-selection.md` — Completed 16 October 2026. Published validated, restorable filter links and matching CSV/JSON exports in four locales. Actual browser downloads verified complete multipage selections, exact original JSON records, selected sort order and source provenance; empty-state and language-context behavior passed.

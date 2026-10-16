@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-10-15T06:00:00.000Z",
-  "dataset_generated_at": "2026-10-15T06:00:00.000Z",
+  "captured_at": "2026-10-16T18:00:00.000Z",
+  "dataset_generated_at": "2026-10-16T18:00:00.000Z",
   "record_count": 167,
   "schema_version": 1,
   "taxonomy_version": 1,
@@ -11,10 +11,10 @@
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.json",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "etag": "\"sha256-35ad98d80575fae738a3e8e928e7b3628fb26543d90538fb1094c9b6c95464cc\"",
-      "last_modified": "Thu, 15 Oct 2026 06:00:00 GMT",
+      "etag": "\"sha256-b76571b6b11ee959fb35b49790e85c19522cb8bc16b9858358af505df32e62e1\"",
+      "last_modified": "Fri, 16 Oct 2026 18:00:00 GMT",
       "bytes": 228324,
-      "sha256": "35ad98d80575fae738a3e8e928e7b3628fb26543d90538fb1094c9b6c95464cc"
+      "sha256": "b76571b6b11ee959fb35b49790e85c19522cb8bc16b9858358af505df32e62e1"
     },
     {
       "file": "data/us-import-evidence-change-radar.csv",
@@ -22,7 +22,7 @@
       "status": 200,
       "content_type": "text/csv; charset=utf-8",
       "etag": "\"sha256-d48a395aa9146606ac2032e8cf9db0832af1134bf595e69a6a9538271bac6425\"",
-      "last_modified": "Thu, 15 Oct 2026 06:00:00 GMT",
+      "last_modified": "Fri, 16 Oct 2026 18:00:00 GMT",
       "bytes": 92681,
       "sha256": "d48a395aa9146606ac2032e8cf9db0832af1134bf595e69a6a9538271bac6425"
     },
@@ -31,20 +31,20 @@
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.dcat.json",
       "status": 200,
       "content_type": "application/ld+json; charset=utf-8",
-      "etag": "\"sha256-ef248e7ad2ab89925c532331412dc69fbeb40c69a73988982a356cbcce9b9819\"",
-      "last_modified": "Thu, 15 Oct 2026 06:00:00 GMT",
+      "etag": "\"sha256-a896ca7863d0b9dcfbdd802a9bb1546878751a0af2c0a517dcb317d9e7b05978\"",
+      "last_modified": "Fri, 16 Oct 2026 18:00:00 GMT",
       "bytes": 2786,
-      "sha256": "ef248e7ad2ab89925c532331412dc69fbeb40c69a73988982a356cbcce9b9819"
+      "sha256": "a896ca7863d0b9dcfbdd802a9bb1546878751a0af2c0a517dcb317d9e7b05978"
     },
     {
       "file": "data/us-import-evidence-change-radar.csv-metadata.json",
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.csv-metadata.json",
       "status": 200,
       "content_type": "application/csvm+json; charset=utf-8",
-      "etag": "\"sha256-7d7529a0cd2548bb39c528f84eedf1955e1d699df0824988f26d63765416242f\"",
-      "last_modified": "Thu, 15 Oct 2026 06:00:00 GMT",
+      "etag": "\"sha256-a9542905e423f9832bc314d2ebe700bc5c1846711bbdc98b0e0f4f1a01aadabc\"",
+      "last_modified": "Fri, 16 Oct 2026 18:00:00 GMT",
       "bytes": 2649,
-      "sha256": "7d7529a0cd2548bb39c528f84eedf1955e1d699df0824988f26d63765416242f"
+      "sha256": "a9542905e423f9832bc314d2ebe700bc5c1846711bbdc98b0e0f4f1a01aadabc"
     }
   ]
 }

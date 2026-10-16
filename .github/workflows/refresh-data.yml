@@ -33,7 +33,7 @@ jobs:
           fi
           git config user.name "tyllus-data-bot"
           git config user.email "team@tyllus.com"
-          git add data index.html en tr it es sitemap.xml
+          git add data feeds index.html en tr it es sitemap.xml
           git commit -m "Refresh Radar dataset"
           git push
           GH_TOKEN="${{ github.token }}" gh api --method POST "repos/${{ github.repository }}/pages/builds"
