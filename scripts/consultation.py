@@ -35,7 +35,7 @@ def load_questions(root):
 
 def csv_text(data):
     stream = io.StringIO(newline='')
-    writer = csv.DictWriter(stream, fieldnames=FIELDS, quoting=csv.QUOTE_ALL)
+    writer = csv.DictWriter(stream, fieldnames=FIELDS, quoting=csv.QUOTE_ALL, lineterminator='\n')
     writer.writeheader()
     for q in data['questions']:
         writer.writerow({'question_number': f'Q{q["number"]}',
