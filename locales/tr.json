@@ -157,5 +157,16 @@
   "shareSelection": "Bu sonuçlara bağlantı",
   "selectionCsv": "Sonuçları indir · CSV",
   "selectionJson": "Sonuçları indir · JSON",
-  "selectionHint": "Dışa aktarma, tüm sayfalardaki eşleşen sonuçları içerir. CSV e-tabloya uygundur; JSON kaynak değerlerini olduğu gibi korur."
+  "selectionHint": "Dışa aktarma, tüm sayfalardaki eşleşen sonuçları içerir. CSV e-tabloya uygundur; JSON kaynak değerlerini olduğu gibi korur.",
+  "worksheetNav": "CBP çalışma dosyası",
+  "worksheetEyebrow": "Kanıtlarınızı hazırlayın · FR 2026-17926",
+  "worksheetTitle": "CBP’nin 64 sorusu, ekibinizin yanıtları için hazır",
+  "worksheetIntro": "Resmi soruları, yanıt sahiplerini, kanıtları ve ölçülen maliyetleri birlikte tutun. Tek CSV, 64 satır; doldurulmuş yanıt yok.",
+  "worksheetDownload": "Yanıt çalışma dosyasını indir · CSV",
+  "worksheetContext": "Tyllus hazırlık rehberi",
+  "worksheetOfficial": "Resmi bildirimi okuyun",
+  "worksheetInstructions": "CSV’yi elektronik tablo uygulamanızda açın. Yanıt taslakları, sorumlular, kanıt referansları, gözlenen dakika ve maliyet, para birimi, ölçüm dönemi, örneklem büyüklüğü, ölçüm/tahmin ayrımı ve varsayımları ekleyin. Yalnız destekleyebildiğiniz bilgileri doldurun; boş alan sıfır demek değildir.",
+  "worksheetBoundary": "Bu bir ön görüş bildirimi; nihai kural veya uyum kontrol listesi değildir. İlk bildirimde görüşlerin 1 Aralık 2026’ya kadar alınacağı yazıyor; değişiklikler için resmi dosyayı kontrol edin. Bu dosyayı indirmek veya doldurmak CBP’ye herhangi bir şey göndermez.",
+  "worksheetLanguage": "Resmi bölüm adları ve sorular İngilizce kalır. Satır sonları ve sayfa işaretleri kaldırılmış, özgün ifade korunmuştur. İndirmeden tüm soruları okumak için bir bölümü açın.",
+  "worksheetSourcePage": "Resmi PDF · sayfa"
 }

@@ -5,6 +5,7 @@ import json
 import re
 from pathlib import Path
 from feeds import build_feeds
+from consultation import build_worksheet, render_questions
 from site_render import date_text, options, render_breakdowns, render_notice, text, time_tag, type_label
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +46,7 @@ def build_page(locale, dataset, root=False):
         'featuredCards': render_featured(notices, strings),
         'quickButtons': ''.join(f'<button class="quick-search" type="button" data-query="{query}">{text(label)}</button>' for query, label in zip(('steel', 'aluminum', 'photovoltaic', 'China', 'India', 'Türkiye', 'Vietnam'), strings['quickLabels'])),
         'noticeCards': '\n'.join(render_notice(n, strings) for n in notices),
+        'consultationQuestions': render_questions(ROOT, strings),
         'agencyRows': agency_rows, 'topicRows': topic_rows,
         'agencyOptions': options(sorted(agency_names.items(), key=lambda pair: pair[1])),
         'topicOptions': options(strings['topicLabels'].items()),
@@ -74,6 +76,7 @@ def build_page(locale, dataset, root=False):
 
 def main():
     dataset = json.loads((ROOT / 'data' / 'us-import-evidence-change-radar.json').read_text())
+    build_worksheet(ROOT)
     build_feeds(ROOT, dataset)
     for locale in LOCALES:
         directory = ROOT / locale

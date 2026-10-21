@@ -157,5 +157,16 @@
   "shareSelection": "Enlace a estos resultados",
   "selectionCsv": "Exportar resultados · CSV",
   "selectionJson": "Exportar resultados · JSON",
-  "selectionHint": "Las exportaciones incluyen todas las coincidencias de todas las páginas. El CSV es apto para hojas de cálculo; el JSON conserva los valores originales de la fuente."
+  "selectionHint": "Las exportaciones incluyen todas las coincidencias de todas las páginas. El CSV es apto para hojas de cálculo; el JSON conserva los valores originales de la fuente.",
+  "worksheetNav": "Hoja CBP",
+  "worksheetEyebrow": "Prepare sus evidencias · FR 2026-17926",
+  "worksheetTitle": "Las 64 preguntas de CBP, listas para las respuestas de su equipo",
+  "worksheetIntro": "Reúna preguntas oficiales, responsables, evidencias y costos medidos. Un CSV, 64 filas, sin respuestas prellenadas.",
+  "worksheetDownload": "Descargar hoja de respuestas · CSV",
+  "worksheetContext": "Guía preparatoria de Tyllus",
+  "worksheetOfficial": "Leer el aviso oficial",
+  "worksheetInstructions": "Abra el CSV en su aplicación de hojas de cálculo. Añada respuestas, responsables, evidencias, minutos y costos observados, moneda, periodo, muestra, distinción entre mediciones y estimaciones y supuestos. Complete solo información sustentable; un campo vacío no equivale a cero.",
+  "worksheetBoundary": "Es un aviso preliminar, no una regla definitiva ni una lista de cumplimiento. El aviso original indica el 1 de diciembre de 2026 para comentarios; consulte cambios en el expediente oficial. Descargar o completar esta hoja no envía nada a CBP.",
+  "worksheetLanguage": "Las secciones y preguntas oficiales permanecen en inglés. Se eliminan saltos de línea y marcas de página; se conserva la redacción original. Abra una sección para leer las preguntas sin descargar.",
+  "worksheetSourcePage": "PDF oficial · página"
 }

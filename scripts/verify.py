@@ -2,6 +2,8 @@
 """Verify real-data pages, links, data integrity and the publication boundary."""
 import csv
 import hashlib
+import html
+import io
 import json
 import re
 import subprocess
@@ -11,6 +13,7 @@ from urllib.parse import urlparse, unquote
 from xml.etree import ElementTree as ET
 from feeds import FEEDS, render_feed, selected_notices
 from build_site import ROOT, LOCALES, build_page
+from consultation import load_questions, csv_text, RELATIVE, FIELDS
 
 
 class Page(HTMLParser):
@@ -44,6 +47,12 @@ def require(condition, message):
 
 
 def main():
+    questions = load_questions(ROOT)
+    workbook = (ROOT / RELATIVE / 'response-worksheet.csv').read_bytes()
+    require(workbook == csv_text(questions).encode('utf-8'), 'Response worksheet differs from official questions')
+    worksheet_rows = list(csv.DictReader(io.StringIO(workbook.decode('utf-8-sig'))))
+    require(len(worksheet_rows) == 64, 'Response worksheet needs all64 questions')
+    require(all(not row[field] for row in worksheet_rows for field in FIELDS[5:]), 'Invented answers or company facts in blank worksheet')
     payload = json.loads((ROOT / 'data/us-import-evidence-change-radar.json').read_text())
     notices = payload['notices']
     for filename, (_, agency) in FEEDS.items():
@@ -77,6 +86,8 @@ def main():
         require(page.lang == locale, f'Wrong document language: {relative}')
         require(set(page.notice_ids) == expected and len(page.notice_ids) == len(notices), f'Missing readable notices in {relative}')
         require(len(page.ids) == len(set(page.ids)), f'Duplicate HTML IDs in {relative}')
+        require(all(f'cbp-q{i}' in page.ids for i in range(1, 65)), f'Missing readable official question in {relative}')
+        require(all(html.escape(q['question']) in contents for q in questions['questions']), f'Official question text missing in {relative}')
         for notice in notices:
             require(notice['officialUrl'] in contents, f'Missing official source in {relative}')
             require(urlparse(notice['officialUrl']).hostname == 'www.federalregister.gov', 'Unexpected source host.')

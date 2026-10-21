@@ -157,5 +157,16 @@
   "shareSelection": "Link to these results",
   "selectionCsv": "Export results · CSV",
   "selectionJson": "Export results · JSON",
-  "selectionHint": "Exports include every matching result, across all pages. CSV is spreadsheet-safe; JSON preserves original source values."
+  "selectionHint": "Exports include every matching result, across all pages. CSV is spreadsheet-safe; JSON preserves original source values.",
+  "worksheetNav": "CBP worksheet",
+  "worksheetEyebrow": "Prepare your evidence · FR 2026-17926",
+  "worksheetTitle": "CBP’s 64 questions, ready for your team’s answers",
+  "worksheetIntro": "Keep official questions, response owners, evidence and measured costs together. One CSV, 64 rows, no pre-filled answers.",
+  "worksheetDownload": "Download response worksheet · CSV",
+  "worksheetContext": "Tyllus preparation guide",
+  "worksheetOfficial": "Read the official notice",
+  "worksheetInstructions": "Open the CSV in your spreadsheet app. Add response drafts, owners, evidence references, observed minutes and costs, currency, measurement period, sample size, measured-or-estimated status and assumptions. Fill only what you can support; a blank is not zero.",
+  "worksheetBoundary": "This is an advance notice, not a final rule or a compliance checklist. The original notice states comments close December 1, 2026; check the official docket for changes. Downloading or filling this worksheet does not submit anything to CBP.",
+  "worksheetLanguage": "Official section names and questions stay in English. Line wrapping and page markers are removed; the original wording is retained. Expand a section to read every question without downloading.",
+  "worksheetSourcePage": "Official PDF · page"
 }

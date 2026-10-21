@@ -1039,3 +1039,15 @@ h1 {
   opacity: 0.45;
   cursor: not-allowed;
 }
+
+/* Source-faithful consultation worksheet. */
+.consultation-groups { display: grid; gap: .75rem; margin-top: 1.5rem; }
+.consultation-group { border: 1px solid var(--line); border-radius: 10px; padding: 1rem; overflow-wrap: anywhere; }
+.consultation-group summary { font-size: 1rem; cursor: pointer; font-weight: 600; line-height: 1.5; }
+.consultation-group summary span { white-space: nowrap; }
+.consultation-questions { list-style: none; padding: 0; margin: 1.25rem 0 0; }
+.consultation-questions li { padding: .75rem 0; border-top: 1px solid var(--line); }
+.consultation-questions p { max-width: 85ch; margin: 0 0 .5rem; }
+.consultation-questions a { font-size: .85rem; }
+.consultation-boundary { border-left: 3px solid var(--accent); padding-left: 1rem; }
+.worksheet-download { font-weight: 700; }

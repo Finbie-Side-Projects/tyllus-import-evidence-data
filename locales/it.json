@@ -157,5 +157,16 @@
   "shareSelection": "Link a questi risultati",
   "selectionCsv": "Esporta risultati · CSV",
   "selectionJson": "Esporta risultati · JSON",
-  "selectionHint": "Le esportazioni includono tutti i risultati corrispondenti, su tutte le pagine. Il CSV è adatto ai fogli di calcolo; il JSON conserva i valori originali della fonte."
+  "selectionHint": "Le esportazioni includono tutti i risultati corrispondenti, su tutte le pagine. Il CSV è adatto ai fogli di calcolo; il JSON conserva i valori originali della fonte.",
+  "worksheetNav": "Scheda CBP",
+  "worksheetEyebrow": "Prepara le evidenze · FR 2026-17926",
+  "worksheetTitle": "Le 64 domande CBP, pronte per le risposte del tuo team",
+  "worksheetIntro": "Riunisci domande ufficiali, responsabili, evidenze e costi misurati. Un CSV, 64 righe, nessuna risposta precompilata.",
+  "worksheetDownload": "Scarica la scheda di risposta · CSV",
+  "worksheetContext": "Guida preparatoria Tyllus",
+  "worksheetOfficial": "Leggi l’avviso ufficiale",
+  "worksheetInstructions": "Apri il CSV nel tuo foglio di calcolo. Aggiungi risposte, responsabili, evidenze, minuti e costi osservati, valuta, periodo, campione, distinzione tra misure e stime e ipotesi. Inserisci solo informazioni documentabili; un campo vuoto non vale zero.",
+  "worksheetBoundary": "È un avviso preliminare, non una norma definitiva o una checklist di conformità. L’avviso originale indica il 1 dicembre 2026 per i commenti; verifica modifiche nel fascicolo ufficiale. Scaricare o compilare la scheda non invia nulla a CBP.",
+  "worksheetLanguage": "Sezioni e domande ufficiali restano in inglese. Sono rimossi solo a capo e marcatori di pagina; il testo originale è conservato. Espandi una sezione per leggere tutte le domande senza scaricarle.",
+  "worksheetSourcePage": "PDF ufficiale · pagina"
 }

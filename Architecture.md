@@ -11,3 +11,9 @@ Verification checks generated-page consistency, every notice/source link and loc
 `scripts/feeds.py` generates three RSS 2.0 distributions during the normal site build: up to 50 latest selected notices, up to 50 USTR-only notices, and up to 50 CBP-only notices. All use only committed public records, preserve original source text, and keep stable Federal Register document GUIDs. Locale pages expose the same English feeds with localized labels and autodiscovery links. Verification parses the feeds and checks source agreement and uniqueness.
 
 Filtered selections are restored from validated URL parameters. The page embeds the same public dataset for local JSON/CSV export; no additional request is made. Pagination changes visibility only; exports include every matching record in the chosen sort order. JSON includes source snapshot and selection provenance. CSV uses the bulk distribution columns with spreadsheet-safe text handling. Language changes retain the selection and notice fragment.
+
+`worksheets/2026-17926/` retains a public official notice and its 64 numbered
+questions. `scripts/consultation.py` checks the source hash and normalized wording,
+generates an entirely blank response CSV and renders all questions under native
+details elements in each locale. It does not change the notice dataset or send
+responses anywhere. This supplementary worksheet has its own source notes.

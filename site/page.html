@@ -67,6 +67,7 @@
       >
       <nav aria-label="{{explore}}">
         <a href="#notices">{{explore}}</a><a href="#topics">{{topicTitle}}</a>
+        <a href="#cbp-consultation">{{worksheetNav}}</a>
       </nav>
       <div class="preferences enhancement" hidden>
         <label class="sr-only" for="language">{{language}}</label
@@ -283,6 +284,22 @@
           <a href="{{prefix}}feeds/cbp.xml">{{cbpRssTitle}} ↗</a>
         </div>
         <p>{{rssText}}</p>
+      </section>
+      <section id="cbp-consultation" class="information" aria-labelledby="worksheet-heading">
+        <div class="section-heading"><div>
+          <p class="eyebrow">{{worksheetEyebrow}}</p>
+          <h2 id="worksheet-heading">{{worksheetTitle}}</h2>
+          <p>{{worksheetIntro}}</p>
+        </div></div>
+        <div class="citation-actions">
+          <a class="worksheet-download" href="{{prefix}}worksheets/2026-17926/response-worksheet.csv" download>{{worksheetDownload}} ↓</a>
+          <a href="https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-17926">{{worksheetContext}} ↗</a>
+          <a href="https://www.govinfo.gov/content/pkg/FR-2026-09-02/html/2026-17926.htm">{{worksheetOfficial}} ↗</a>
+        </div>
+        <p>{{worksheetInstructions}}</p>
+        <p class="consultation-boundary">{{worksheetBoundary}}</p>
+        <p>{{worksheetLanguage}}</p>
+        <div class="consultation-groups">{{consultationQuestions}}</div>
       </section>
       <section class="citation" aria-labelledby="citation-heading">
         <div>

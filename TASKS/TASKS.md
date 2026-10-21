@@ -14,3 +14,5 @@
 - [x] [0010-share-and-export-selection.md](0010-share-and-export-selection.md) — Publish restorable source selections and matching CSV/JSON exports.
 
 - [x] [0011-sync-metadata-and-feed-publication.md](0011-sync-metadata-and-feed-publication.md) — Synchronize current source metadata and commit generated feeds with each refresh.
+
+- [ ] [0012-cbp-response-worksheet.md](0012-cbp-response-worksheet.md) — Publish all 64 official questions with a blank response and evidence worksheet.

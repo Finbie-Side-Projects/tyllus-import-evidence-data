@@ -23,6 +23,17 @@ All dataset records are rendered directly on this website. JavaScript adds searc
 
 An on-demand workflow refreshes the repository from Tyllus's public endpoints, rebuilds each locale page, verifies data and pages, and commits only when the published files change.
 
+## CBP consultation response worksheet
+
+The [64-question response worksheet](https://finbie-side-projects.github.io/tyllus-import-evidence-data/en/#cbp-consultation)
+retains the official prompts from FR 2026-17926, grouped by their seven source
+sections. The [CSV](worksheets/2026-17926/response-worksheet.csv) provides blank
+response, owner, evidence, time/cost and assumption columns. All questions are
+also readable on the website without JavaScript. Original source wording stays
+in English; surrounding instructions are available in four languages.
+This is optional preparation for an advance notice, not a compliance checklist
+or an agency submission. See [source and normalization notes](worksheets/2026-17926/README.md).
+
 ## Provenance
 
 The records come from the [Federal Register API](https://www.federalregister.gov/developers/documentation/api/v1) for U.S. Customs and Border Protection, the Federal Maritime Commission, the International Trade Administration, the International Trade Commission and the Office of the United States Trade Representative.
