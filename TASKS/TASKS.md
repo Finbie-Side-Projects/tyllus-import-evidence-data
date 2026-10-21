@@ -19,4 +19,4 @@
 
 - [x] [0013-sync-2026-10-21-metadata.md](0013-sync-2026-10-21-metadata.md) — Synchronize unchanged records, current metadata and three feeds.
 
-- [ ] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.
+- [x] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.

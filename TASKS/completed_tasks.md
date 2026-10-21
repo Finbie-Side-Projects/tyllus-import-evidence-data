@@ -22,3 +22,7 @@ Published all 64 official CBP consultation questions and a blank response/eviden
 ## 2026-10-21 — 0013
 
 Synchronized current source metadata with 167 unchanged notices and matching three RSS feeds. Reconciled the existing catalogue PR without adding a duplicate.
+
+## 2026-10-21 — 0014
+
+After the two approved sends, published the changed 183-record source selection, verified all 50 new official PDF endpoints, 19 live files and four canonical distributions, and archived the public snapshot in a dated release. Existing worksheet, DOI and frontend owner gate retained.
