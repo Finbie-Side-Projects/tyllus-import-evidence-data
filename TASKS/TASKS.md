@@ -18,3 +18,5 @@
 - [x] [0012-cbp-response-worksheet.md](0012-cbp-response-worksheet.md) — Publish all 64 official questions with a blank response and evidence worksheet.
 
 - [x] [0013-sync-2026-10-21-metadata.md](0013-sync-2026-10-21-metadata.md) — Synchronize unchanged records, current metadata and three feeds.
+
+- [ ] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.

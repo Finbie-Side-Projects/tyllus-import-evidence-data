@@ -1,7 +1,7 @@
 {
   "captured_at": "2026-10-21T06:00:00.000Z",
   "dataset_generated_at": "2026-10-21T06:00:00.000Z",
-  "record_count": 167,
+  "record_count": 183,
   "schema_version": 1,
   "taxonomy_version": 1,
   "landing_page": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar",
@@ -11,30 +11,30 @@
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.json",
       "status": 200,
       "content_type": "application/json; charset=utf-8",
-      "etag": "\"sha256-f2b7c0c5b444ef44d3f13b36854a5086d051fc5f14ae1fc8d26704d94ed25193\"",
+      "etag": "\"sha256-2cb477fe29a67e3e425314aa8517217bbc8fee4224161530e640af690ad22d4c\"",
       "last_modified": "Wed, 21 Oct 2026 06:00:00 GMT",
-      "bytes": 228324,
-      "sha256": "f2b7c0c5b444ef44d3f13b36854a5086d051fc5f14ae1fc8d26704d94ed25193"
+      "bytes": 251707,
+      "sha256": "2cb477fe29a67e3e425314aa8517217bbc8fee4224161530e640af690ad22d4c"
     },
     {
       "file": "data/us-import-evidence-change-radar.csv",
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.csv",
       "status": 200,
       "content_type": "text/csv; charset=utf-8",
-      "etag": "\"sha256-d48a395aa9146606ac2032e8cf9db0832af1134bf595e69a6a9538271bac6425\"",
+      "etag": "\"sha256-d28d68836dc54732f9a0477fb2c8dc8be6d69a17c9cee4182ac0c97112aa172f\"",
       "last_modified": "Wed, 21 Oct 2026 06:00:00 GMT",
-      "bytes": 92681,
-      "sha256": "d48a395aa9146606ac2032e8cf9db0832af1134bf595e69a6a9538271bac6425"
+      "bytes": 102121,
+      "sha256": "d28d68836dc54732f9a0477fb2c8dc8be6d69a17c9cee4182ac0c97112aa172f"
     },
     {
       "file": "data/us-import-evidence-change-radar.dcat.json",
       "source_url": "https://www.tyllus.com/data/us-import-evidence-change-radar.dcat.json",
       "status": 200,
       "content_type": "application/ld+json; charset=utf-8",
-      "etag": "\"sha256-906f95fe3926651a3bbd0f22d84a5c34af84ec86e24194be82ba6158f49fb31b\"",
+      "etag": "\"sha256-35487f4f5ce2f43c6c236cda6464ee5208f0a9a930c17df68a3c672db04f06f0\"",
       "last_modified": "Wed, 21 Oct 2026 06:00:00 GMT",
       "bytes": 2786,
-      "sha256": "906f95fe3926651a3bbd0f22d84a5c34af84ec86e24194be82ba6158f49fb31b"
+      "sha256": "35487f4f5ce2f43c6c236cda6464ee5208f0a9a930c17df68a3c672db04f06f0"
     },
     {
       "file": "data/us-import-evidence-change-radar.csv-metadata.json",
