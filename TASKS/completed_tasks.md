@@ -14,3 +14,11 @@
 - `0010-share-and-export-selection.md` — Completed 16 October 2026. Published validated, restorable filter links and matching CSV/JSON exports in four locales. Actual browser downloads verified complete multipage selections, exact original JSON records, selected sort order and source provenance; empty-state and language-context behavior passed.
 
 - `0011-sync-metadata-and-feed-publication.md` — Completed16October2026. Synchronized changed source metadata while retaining167identical records and stable RSS items, fixed the refresh workflow to stage generated feeds with data/pages, and verified successful Pages publication plus15matching live files.
+
+## 2026-10-21 — 0012
+
+Published all 64 official CBP consultation questions and a blank response/evidence CSV in four locale interfaces. Source hash, wording, source pages, blank company fields, public HTTP distributions and live rendering verified. See task 0012 and the run report for browser download-policy and mobile-test limitations.
+
+## 2026-10-21 — 0013
+
+Synchronized current source metadata with 167 unchanged notices and matching three RSS feeds. Reconciled the existing catalogue PR without adding a duplicate.
