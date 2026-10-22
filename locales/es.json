@@ -168,5 +168,7 @@
   "worksheetInstructions": "Abra el CSV en su aplicación de hojas de cálculo. Añada respuestas, responsables, evidencias, minutos y costos observados, moneda, periodo, muestra, distinción entre mediciones y estimaciones y supuestos. Complete solo información sustentable; un campo vacío no equivale a cero.",
   "worksheetBoundary": "Es un aviso preliminar, no una regla definitiva ni una lista de cumplimiento. El aviso original indica el 1 de diciembre de 2026 para comentarios; consulte cambios en el expediente oficial. Descargar o completar esta hoja no envía nada a CBP.",
   "worksheetLanguage": "Las secciones y preguntas oficiales permanecen en inglés. Se eliminan saltos de línea y marcas de página; se conserva la redacción original. Abra una sección para leer las preguntas sin descargar.",
-  "worksheetSourcePage": "PDF oficial · página"
+  "worksheetSourcePage": "PDF oficial · página",
+  "worksheetExcelDownload": "Descargar libro para el equipo · Excel",
+  "worksheetExcelText": "El archivo Excel en inglés conserva las preguntas oficiales en una hoja separada. Asigna responsables, reúne borradores y pruebas y filtra el siguiente paso de preparación. El estado de revisión y el tipo de medición tienen listas desplegables. Todos los campos de respuesta empiezan vacíos. Los recuentos miden preparación, no cumplimiento legal."
 }

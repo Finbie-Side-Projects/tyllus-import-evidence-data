@@ -168,5 +168,7 @@
   "worksheetInstructions": "Apri il CSV nel tuo foglio di calcolo. Aggiungi risposte, responsabili, evidenze, minuti e costi osservati, valuta, periodo, campione, distinzione tra misure e stime e ipotesi. Inserisci solo informazioni documentabili; un campo vuoto non vale zero.",
   "worksheetBoundary": "È un avviso preliminare, non una norma definitiva o una checklist di conformità. L’avviso originale indica il 1 dicembre 2026 per i commenti; verifica modifiche nel fascicolo ufficiale. Scaricare o compilare la scheda non invia nulla a CBP.",
   "worksheetLanguage": "Sezioni e domande ufficiali restano in inglese. Sono rimossi solo a capo e marcatori di pagina; il testo originale è conservato. Espandi una sezione per leggere tutte le domande senza scaricarle.",
-  "worksheetSourcePage": "PDF ufficiale · pagina"
+  "worksheetSourcePage": "PDF ufficiale · pagina",
+  "worksheetExcelDownload": "Scarica il foglio per il team · Excel",
+  "worksheetExcelText": "Il file Excel in inglese conserva le domande ufficiali in un foglio separato. Assegna i responsabili, raccogli bozze e prove e filtra il prossimo passo di preparazione. Lo stato di revisione e il tipo di misurazione hanno elenchi a discesa. Tutti i campi di risposta sono inizialmente vuoti. I conteggi seguono la preparazione, non la conformità legale."
 }

@@ -168,5 +168,7 @@
   "worksheetInstructions": "CSV’yi elektronik tablo uygulamanızda açın. Yanıt taslakları, sorumlular, kanıt referansları, gözlenen dakika ve maliyet, para birimi, ölçüm dönemi, örneklem büyüklüğü, ölçüm/tahmin ayrımı ve varsayımları ekleyin. Yalnız destekleyebildiğiniz bilgileri doldurun; boş alan sıfır demek değildir.",
   "worksheetBoundary": "Bu bir ön görüş bildirimi; nihai kural veya uyum kontrol listesi değildir. İlk bildirimde görüşlerin 1 Aralık 2026’ya kadar alınacağı yazıyor; değişiklikler için resmi dosyayı kontrol edin. Bu dosyayı indirmek veya doldurmak CBP’ye herhangi bir şey göndermez.",
   "worksheetLanguage": "Resmi bölüm adları ve sorular İngilizce kalır. Satır sonları ve sayfa işaretleri kaldırılmış, özgün ifade korunmuştur. İndirmeden tüm soruları okumak için bir bölümü açın.",
-  "worksheetSourcePage": "Resmi PDF · sayfa"
+  "worksheetSourcePage": "Resmi PDF · sayfa",
+  "worksheetExcelDownload": "Ekip çalışma dosyasını indir · Excel",
+  "worksheetExcelText": "İngilizce Excel dosyasında resmi sorular ayrı bir sekmededir. Sorumlu atayın, yanıt ve kanıtları toplayın, sonraki hazırlık adımını filtreleyin. İnceleme durumu ve ölçülen/tahmini değer türü açılır listelerden seçilir. Tüm yanıt alanları başlangıçta boştur. Sayaçlar hukuki uyumu değil hazırlığı izler."
 }

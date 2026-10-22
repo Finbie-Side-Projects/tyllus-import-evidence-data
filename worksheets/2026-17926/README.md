@@ -32,3 +32,28 @@ This is a preparation aid, not legal advice or an official CBP product.
 Rebuild with `python3 scripts/build_site.py`; verify with
 `python3 scripts/verify.py`. Source status and terms are explained in
 [`DATA-USAGE.md`](../../DATA-USAGE.md). No new license over government text is claimed.
+
+## Team workbook
+
+`response-workbook.xlsx` is an optional English Excel version. The Questions tab
+retains the same 64 official questions and page URLs. The Responses tab has 11
+blank local input fields per question, filtered tables, review/measurement
+dropdowns, and formula-based next preparation steps and counts. No measured
+company values or example answers are supplied. Blank numeric inputs remain
+blank, and costs are not summed across currencies. Review counts describe
+preparation only, not legal compliance or a submitted comment.
+
+Assign an owner, draft a response and add an evidence reference or explain why
+evidence is unavailable. Mark the draft Reviewed only after your own review.
+Not answering is an explicit scope decision, separate from a reviewed response.
+The next-step formula continues to show missing owner/draft/evidence even if
+Reviewed was selected early. Source URLs are plain text and may be copied into
+a browser; the workbook does not use hyperlink formulas or macros.
+
+The public workbook is blank. Fill it locally and keep your completed copy
+private. It does not upload responses, file comments, or change official dates.
+Its numeric calculations were checked with representative edits and restored
+to blank inputs before publication. Native Excel behavior was not separately
+tested. The normal site verifier checks the exported source rows, blank input
+fields, formula presence and categorical validations. Regenerate and review
+the workbook whenever the retained source questions change.

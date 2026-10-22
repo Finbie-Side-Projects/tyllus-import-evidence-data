@@ -20,3 +20,5 @@
 - [x] [0013-sync-2026-10-21-metadata.md](0013-sync-2026-10-21-metadata.md) — Synchronize unchanged records, current metadata and three feeds.
 
 - [x] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.
+
+- [ ] [0015-team-response-workbook.md](0015-team-response-workbook.md) — Publish the blank team workbook with source questions and preparation tracking.

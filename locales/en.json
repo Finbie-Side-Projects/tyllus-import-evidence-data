@@ -168,5 +168,7 @@
   "worksheetInstructions": "Open the CSV in your spreadsheet app. Add response drafts, owners, evidence references, observed minutes and costs, currency, measurement period, sample size, measured-or-estimated status and assumptions. Fill only what you can support; a blank is not zero.",
   "worksheetBoundary": "This is an advance notice, not a final rule or a compliance checklist. The original notice states comments close December 1, 2026; check the official docket for changes. Downloading or filling this worksheet does not submit anything to CBP.",
   "worksheetLanguage": "Official section names and questions stay in English. Line wrapping and page markers are removed; the original wording is retained. Expand a section to read every question without downloading.",
-  "worksheetSourcePage": "Official PDF · page"
+  "worksheetSourcePage": "Official PDF · page",
+  "worksheetExcelDownload": "Download team workbook · Excel",
+  "worksheetExcelText": "The English Excel workbook keeps the official questions on a separate tab. Assign owners, collect drafts and evidence, and filter the next preparation step. Review status and measured-or-estimated values have dropdowns. All response inputs start blank. Counts track preparation, not legal compliance."
 }

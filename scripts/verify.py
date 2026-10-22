@@ -7,6 +7,7 @@ import io
 import json
 import re
 import subprocess
+import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, unquote
@@ -53,6 +54,34 @@ def main():
     worksheet_rows = list(csv.DictReader(io.StringIO(workbook.decode('utf-8-sig'))))
     require(len(worksheet_rows) == 64, 'Response worksheet needs all64 questions')
     require(all(not row[field] for row in worksheet_rows for field in FIELDS[5:]), 'Invented answers or company facts in blank worksheet')
+    # Verify the native workbook artifact without changing its source or inputs.
+    ns = {'m': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+    with zipfile.ZipFile(ROOT / RELATIVE / 'response-workbook.xlsx') as archive:
+        names = archive.namelist()
+        require(not any('vbaProject' in n or n.startswith('xl/externalLinks/') for n in names), 'Unexpected workbook macro or external connection')
+        strings = ET.fromstring(archive.read('xl/sharedStrings.xml'))
+        shared = [''.join(node.itertext()) for node in strings]
+        def sheet_values(filename):
+            tree = ET.fromstring(archive.read(filename))
+            values = {}
+            for cell in tree.findall('.//m:sheetData/m:row/m:c', ns):
+                value = cell.find('m:v', ns)
+                text = value.text if value is not None else ''
+                values[cell.attrib['r']] = shared[int(text)] if cell.attrib.get('t') == 's' and text else text
+            return tree, values
+        response_tree, response_values = sheet_values('xl/worksheets/sheet1.xml')
+        _, question_values = sheet_values('xl/worksheets/sheet2.xml')
+        for index, question in enumerate(questions['questions']):
+            source_row, input_row = index + 6, index + 13
+            require(question_values.get(f'A{source_row}') == f'Q{index + 1}', 'Workbook question numbering changed')
+            require(question_values.get(f'C{source_row}') == question['question'], 'Workbook source question differs')
+            require(question_values.get(f'D{source_row}') == question['sourceUrl'], 'Workbook source URL differs')
+            require(response_values.get(f'A{input_row}') == f'Q{index + 1}', 'Workbook response identity differs')
+            require(all(response_values.get(f'{col}{input_row}', '') == '' for col in 'CDEFGHIJKLM'), 'Invented workbook input')
+        formulas = response_tree.findall('.//m:f', ns)
+        require(len(formulas) == 68, 'Missing next-step or summary formulas')
+        require(len(response_tree.findall('.//m:dataValidation', ns)) == 2, 'Missing workbook dropdowns')
+        require(len([n for n in names if re.fullmatch(r'xl/tables/table\d+\.xml', n)]) == 2, 'Missing workbook filter tables')
     payload = json.loads((ROOT / 'data/us-import-evidence-change-radar.json').read_text())
     notices = payload['notices']
     for filename, (_, agency) in FEEDS.items():
