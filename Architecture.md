@@ -17,3 +17,9 @@ questions. `scripts/consultation.py` checks the source hash and normalized wordi
 generates an entirely blank response CSV and renders all questions under native
 details elements in each locale. It does not change the notice dataset or send
 responses anywhere. This supplementary worksheet has its own source notes.
+
+The optional `response-workbook.xlsx` uses the same retained questions with a
+separate blank response tab, categorical validation and preparation formulas.
+It has no macros, external data connections or response uploads. The verifier
+checks source rows, initial input blanks, filter tables and formula presence.
+Regeneration is required if retained source questions change.
