@@ -1,4 +1,4 @@
-[IN_PROGRESS]
+[DONE]
 
 # Publish a usable team response workbook
 
@@ -17,3 +17,11 @@ The public source comparison after the workbook implementation kept183records
 unchanged and advanced metadata to2026-10-22T18:00:00Z. The source distributions,
 manifest, four locale pages and three feeds were rebuilt and verified. No
 record release or DOI change is needed for this metadata-only refresh.
+
+Published feature commit721cb298d64f8856c1fa7f2967a4c4046ff88b25 and metadata
+commit8a0083baa0553bd82adcd6a786a007b870f8413e. Pages build39832853461
+succeeded. All22livefiles and4publicsource distributions match. The19202-byte
+Excel file matches SHA256 836d10fc689b9bf3f63dce2ae3669d4be92f1326d07dfb349367977fa63443fd.
+Live search for2026-21067 yields one exact result and all four locale pages
+link the workbook. Native download saving was not retried after the prior
+organization-policy block; native Excel was not separately tested.

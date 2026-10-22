@@ -21,4 +21,4 @@
 
 - [x] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.
 
-- [ ] [0015-team-response-workbook.md](0015-team-response-workbook.md) — Publish the blank team workbook with source questions and preparation tracking.
+- [x] [0015-team-response-workbook.md](0015-team-response-workbook.md) — Publish the blank team workbook with source questions and preparation tracking.
