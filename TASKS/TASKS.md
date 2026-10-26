@@ -22,3 +22,5 @@
 - [x] [0014-sync-after-approved-outreach.md](0014-sync-after-approved-outreach.md) — Publish the changed source selection observed after the approved sends.
 
 - [x] [0015-team-response-workbook.md](0015-team-response-workbook.md) — Publish the blank team workbook with source questions and preparation tracking.
+
+- [ ] [0016-refresh-2026-10-26-snapshot.md](0016-refresh-2026-10-26-snapshot.md) — Synchronize current public source distributions and verify the live explorer.
