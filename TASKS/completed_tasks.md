@@ -30,3 +30,5 @@ After the two approved sends, published the changed 183-record source selection,
 - 2026-10-22:0015complete. Published the64-question blank team workbook with11local input fields, preparation formulas and2categorical dropdowns; verified22livefiles, source agreement and source-search behavior.
 
 - 2026-10-26: 0016 complete. Published the 183-record current source selection (four additions, four absent, 179 retained unchanged), refreshed four interfaces and three feeds, verified 22 live files and new-record search, and archived five public distribution assets in data-2026-10-26.
+
+- 2026-10-27: 0017 and 0018 complete. Published the 187-record current selection and preserved ten earlier source references so previously shared exact IDs still lead to known reader and government documents. Verified source fidelity, capture guards, local/live historical/current/unknown search flows, the real destination, four interfaces, 23 live files and five dated release assets.

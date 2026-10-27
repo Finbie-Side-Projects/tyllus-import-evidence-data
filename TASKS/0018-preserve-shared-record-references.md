@@ -1,4 +1,4 @@
-[IN PROGRESS]
+[DONE]
 
 # Keep previously shared notice references useful after selection rollover
 
@@ -17,3 +17,20 @@ Provide a readable earlier-reference list without JavaScript and localized UI.
 Verify the previously shared 2026-20816 flow, current-record and unknown-record
 searches, disabled empty exports, historical provenance and current-data identity.
 Publish and inspect the live result before marking this repair complete.
+
+Retained all ten removed records exactly from the prior committed public
+snapshot, with snapshot/record checksums and source commit. Repeated capture is
+idempotent; uncommitted input is rejected. The standard verifier validates
+history independently and confirms current embedded JSON and CSV identity.
+
+Local and live browser checks passed: 2026-20816 offers its known source links
+with empty current exports disabled; an unknown ID offers no manufactured link;
+a current new ID produces one result and enables current exports. Clicking the
+historical Tyllus link opens the correct still-live record. Switching to Turkish
+retains the ID and explains its historical status. The prior-reference list is
+rendered in HTML and available through native details without JavaScript.
+Dedicated mobile viewport testing was not performed.
+
+Published content commit 7bb9d4d739611f35daf72dcc4eb196f60e70493f; Pages build 40552727489 succeeded.
+All 23 live files and four canonical source distributions match. Archived five
+current distribution/manifest assets as data-2026-10-27; original DOI unchanged.
