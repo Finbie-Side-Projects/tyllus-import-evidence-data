@@ -170,5 +170,11 @@
   "worksheetLanguage": "Sezioni e domande ufficiali restano in inglese. Sono rimossi solo a capo e marcatori di pagina; il testo originale è conservato. Espandi una sezione per leggere tutte le domande senza scaricarle.",
   "worksheetSourcePage": "PDF ufficiale · pagina",
   "worksheetExcelDownload": "Scarica il foglio per il team · Excel",
-  "worksheetExcelText": "Il file Excel in inglese conserva le domande ufficiali in un foglio separato. Assegna i responsabili, raccogli bozze e prove e filtra il prossimo passo di preparazione. Lo stato di revisione e il tipo di misurazione hanno elenchi a discesa. Tutti i campi di risposta sono inizialmente vuoti. I conteggi seguono la preparazione, non la conformità legale."
+  "worksheetExcelText": "Il file Excel in inglese conserva le domande ufficiali in un foglio separato. Assegna i responsabili, raccogli bozze e prove e filtra il prossimo passo di preparazione. Lo stato di revisione e il tipo di misurazione hanno elenchi a discesa. Tutti i campi di risposta sono inizialmente vuoti. I conteggi seguono la preparazione, non la conformità legale.",
+  "readerRecord": "Scheda Tyllus",
+  "previousTitle": "Avvisi inclusi in precedenza",
+  "previousScope": "Riferimenti conservati da precedenti selezioni pubbliche. Sono esclusi dai conteggi, dalle esportazioni e dai feed attuali. L’assenza dalla selezione non significa che un avviso ufficiale sia stato ritirato.",
+  "previousMatchText": "Questo avviso era presente in una selezione precedente e non è nel dataset attuale. Apri la scheda Tyllus o l’avviso ufficiale. L’assenza non indica un ritiro.",
+  "previousSnapshot": "Ultima selezione di origine",
+  "previousSource": "Selezione di origine conservata"
 }

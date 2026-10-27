@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 from feeds import build_feeds
 from consultation import build_worksheet, render_questions
+from history import render_history
 from site_render import date_text, options, render_breakdowns, render_notice, text, time_tag, type_label
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,6 +45,7 @@ def build_page(locale, dataset, root=False):
         'noticeCount': len(notices), 'agencyCount': len(agency_names),
         'topicCount': len({d['id'] for n in notices for d in n['evidenceDomains']}),
         'featuredCards': render_featured(notices, strings),
+        'previousRecords': render_history(ROOT, strings),
         'quickButtons': ''.join(f'<button class="quick-search" type="button" data-query="{query}">{text(label)}</button>' for query, label in zip(('steel', 'aluminum', 'photovoltaic', 'China', 'India', 'Türkiye', 'Vietnam'), strings['quickLabels'])),
         'noticeCards': '\n'.join(render_notice(n, strings) for n in notices),
         'consultationQuestions': render_questions(ROOT, strings),

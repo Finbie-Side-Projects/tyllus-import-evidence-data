@@ -10,6 +10,26 @@
   --tag: #edf1f7;
   --hero: #edf3ff;
 }
+.previous-match,
+.earlier-selections {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.previous-match h4,
+.previous-record h4 {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+.previous-record {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.previous-record p {
+  color: var(--muted);
+}
 :root[data-theme="dark"] {
   color-scheme: dark;
   --background: #0c1421;

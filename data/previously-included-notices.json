@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "f403b5898022da4deb5968dde2695eda4895bcecaba5d75aa101248c8750b885",
+      "notice": {
+        "id": "2026-20918",
+        "title": "Non-Refillable Steel Cylinders From China; Determinations",
+        "abstract": null,
+        "sourceType": "Notice",
+        "action": null,
+        "agency": "International Trade Commission",
+        "agencySlug": "international-trade-commission",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "Investigation Nos. 701-TA-644 and 731-TA-1494 (Review)"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20918/non-refillable-steel-cylinders-from-china-determinations",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20918.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "trade-remedy determination"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20918"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "6bd68d7a8440bab54fc0e55691f0cd61463f4226aece9b41b95277565e028af5",
+      "notice": {
+        "id": "2026-20904",
+        "title": "Common Alloy Aluminum Sheet From Bahrain, Brazil, Croatia, Egypt, Germany, India, Indonesia, Italy, Oman, Romania, Serbia, Slovenia, South Africa, Spain, Taiwan, and Turkey; Scheduling of Full Five-Year Reviews",
+        "abstract": "The Commission hereby gives notice of the scheduling of full reviews pursuant to the Tariff Act of 1930 to determine whether revocation of the countervailing duty orders on common alloy aluminum sheet (\"CAAS\") from Bahrain, India, and Turkey and the revocation of the antidumping duty orders on CASS from Bahrain, Brazil, Croatia, Egypt, Germany, India, Indonesia, Italy, Oman, Romania, Serbia, Slovenia, South Africa, Spain, Taiwan, and Turkey would be likely to lead to continuation or recurrence of material injury within a reasonably foreseeable time. The Commission has determined to exercise its authority to extend the review period by up to 90 days.",
+        "sourceType": "Notice",
+        "action": "Notice.",
+        "agency": "International Trade Commission",
+        "agencySlug": "international-trade-commission",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "Investigation Nos. 701-TA-639, 641-642 and 731-TA-1475-1479, 1481-1483, 1485-1492 (Review)"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20904/common-alloy-aluminum-sheet-from-bahrain-brazil-croatia-egypt-germany-india-indonesia-italy-oman",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20904.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "countervailing duty",
+              "tariff",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20904"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "8f32b336bd77a0c1d822e3ad3f5512c82439bd1d388123560c5eb64688d8dd0e",
+      "notice": {
+        "id": "2026-20903",
+        "title": "Fatty Acids From Indonesia and Malaysia; Scheduling of the Final Phase of Countervailing Duty and Antidumping Duty Investigations",
+        "abstract": "The Commission hereby gives notice of the scheduling of the final phase of antidumping and countervailing duty investigation Nos. 701-TA-785-786 and 731-TA-1773-1774 (Final) pursuant to the Tariff Act of 1930 to determine whether an industry in the United States is materially injured or threatened with material injury, or the establishment of an industry in the United States is materially retarded, by reason of imports of fatty acids from Indonesia and Malaysia, provided for in subheadings 2915.70.01, 2915.90.10, 2916.15.10, 2916.15.51, 3823.11.00, 3823.12.00, 3823.19.20, and 3823.19.40 of the Harmonized Tariff Schedule of the United States, preliminarily determined by the Department of Commerce (\"Commerce\") to be subsidized and sold at less-than-fair-value.",
+        "sourceType": "Notice",
+        "action": "Notice.",
+        "agency": "International Trade Commission",
+        "agencySlug": "international-trade-commission",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "Investigation Nos. 701-TA-785-786 and 731-TA-1773-1774 (Final)"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20903/fatty-acids-from-indonesia-and-malaysia-scheduling-of-the-final-phase-of-countervailing-duty-and",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20903.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "countervailing duty",
+              "tariff",
+              "duty"
+            ]
+          },
+          {
+            "id": "enforcement-admissibility",
+            "matchedTerms": [
+              "investigation"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20903"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "5c6f287b8833b368a3b09297f19a8fb8af65d7057fcaac1f2ab61aa58c3599f0",
+      "notice": {
+        "id": "2026-20899",
+        "title": "Xanthan Gum From the People's Republic of China: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that exporters subject to this review made sales of subject merchandise at less than normal value during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to CP Kelco (Shandong) Biological Company Limited (CP Kelco Shandong), Deosen Biochemical Ltd., Langfang Meihua Biotechnology Co., Ltd., Meihua Group International Trading (Hong Kong), Meihua Group International Trading (Hong Kong) Limited, and Xinjiang Meihua Amino Acid Co., Ltd. Interested parties are invited to comment on these preliminary results of review.",
+        "sourceType": "Notice",
+        "action": null,
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "A-570-985"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20899/xanthan-gum-from-the-peoples-republic-of-china-preliminary-results-and-rescission-in-part-of",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20899.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "party-identity",
+            "matchedTerms": [
+              "exporter"
+            ]
+          },
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20899"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "b8f70d7acc37c35d380e244bfc4231c0ba95d38cc22fcfa52ae7b94eee3a1c53",
+      "notice": {
+        "id": "2026-20898",
+        "title": "Certain Steel Nails From Malaysia: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "abstract": "The U.S. Department of Commerce (Commerce) preliminarily finds that producers/exporters subject to this administrative review made sales of subject merchandise at less than normal value (NV) during the period of review (POR), July 1, 2024, through June 30, 2025. In addition, we are rescinding the review with respect to 40 companies. Interested parties are invited to comment on these preliminary results of review.",
+        "sourceType": "Notice",
+        "action": null,
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "A-557-816"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20898/certain-steel-nails-from-malaysia-preliminary-results-and-rescission-in-part-of-antidumping-duty",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20898.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "party-identity",
+            "matchedTerms": [
+              "exporter"
+            ]
+          },
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20898"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "8173a85ee7e47aa3a10799da7582d66de1def415ad8ddcb387a78784cf42ef7c",
+      "notice": {
+        "id": "2026-20897",
+        "title": "Certain Corrosion-Resistant Steel Products From Taiwan: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+        "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that certain corrosion-resistant steel products (CORE) from Taiwan are being sold in the United States at below normal value during the period of review (POR), July 1, 2024, through June 30, 2025. We invite interested parties to comment on these preliminary results.",
+        "sourceType": "Notice",
+        "action": null,
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "A-583-856"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20897/certain-corrosion-resistant-steel-products-from-taiwan-preliminary-results-and-rescission-in-part-of",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20897.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20897"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "9f9f4605609b226a6e8828338b255f7e61b0dd657e2fea1378ed3a02bb9e7f67",
+      "notice": {
+        "id": "2026-20894",
+        "title": "United States-Mexico-Canada Agreement (USMCA), Article 10.12; Binational Panel Review: Notice of Panel Decision",
+        "abstract": "On October 8, 2026, the Binational Panel issued its Decision on the Final Determination in the matter of Certain Softwood Lumber Products from Canada: Final Affirmative Countervailing Duty Administrative Review, 2017-2018 (Secretariat File Number: USA-CDA- 2020-10.12-01). The Binational Panel affirmed in part and remanded in part the U.S. Department of Commerce's Determination.",
+        "sourceType": "Notice",
+        "action": "Notice of Panel Decision.",
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20894/united-states-mexico-canada-agreement-usmca-article-1012-binational-panel-review-notice-of-panel",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20894.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "countervailing duty",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20894"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "feed65a83e91e1c992779db6e38cd4b88935a39101eba38b4e1f4bd6bcfa4adb",
+      "notice": {
+        "id": "2026-20884",
+        "title": "Advance Traveler Information for Rail",
+        "abstract": "U.S. Customs and Border Protection (CBP) is proposing to require rail carriers to transmit advance electronic traveler information to CBP for any individual (crew and passengers) who is arriving in or departing from the United States on board a train. The rail carrier also would be required to transmit an advance notice of arrival or departure, as applicable, for the train. This rule would enhance security while facilitating legitimate international travel on board trains.",
+        "sourceType": "Proposed Rule",
+        "action": "Notice of proposed rulemaking.",
+        "agency": "U.S. Customs and Border Protection",
+        "agencySlug": "u-s-customs-and-border-protection",
+        "publicationDate": "2026-10-13",
+        "commentsCloseOn": "2026-12-14",
+        "effectiveOn": null,
+        "docketIds": [
+          "Docket No. USCBP-2026-0992"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/13/2026-20884/advance-traveler-information-for-rail",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/pdf/2026-20884.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "shipment-transport",
+            "matchedTerms": [
+              "carrier"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20884"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "b9e2a1e42d91f8f46465bf72aa3017c744d852b5abee4d8e9b003d3eee764148",
+      "notice": {
+        "id": "2026-20857",
+        "title": "North American Free Trade Agreement (NAFTA), Article 1904; Binational Panel Review: Notice of Panel Decision",
+        "abstract": "On October 5, 2026, the Binational Panel issued its Decision on the Second Redetermination on Remand in the matter of Certain Softwood Lumber Products from Canada: Final Affirmative Countervailing Duty Determination (Secretariat File Number: USA-CDA-2017-1904-02). The Binational Panel affirmed the U.S. Department of Commerce's Second Redetermination on Remand.",
+        "sourceType": "Notice",
+        "action": "Notice of panel decision.",
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-13",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/13/2026-20857/north-american-free-trade-agreement-nafta-article-1904-binational-panel-review-notice-of-panel",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/pdf/2026-20857.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "countervailing duty",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20857"
+      }
+    },
+    {
+      "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
+      "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
+      "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",
+      "noticeSha256": "35ebeb7cdb872af8c9fec2844bad6ddd54755b13641a35b4d410a510f9be5d12",
+      "notice": {
+        "id": "2026-20816",
+        "title": "Welded Stainless Steel Pressure Pipe From the Socialist Republic of Vietnam: Preliminary Results of and Intent To Rescind, in Part, Antidumping Duty Administrative Review; 2024-2025",
+        "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that sales of welded stainless steel pressure pipe (stainless pressure pipe) from the Socialist Republic of Vietnam (Vietnam) were made at less than normal value (NV) during the period of review (POR) July 1, 2024, through June 30, 2025. Additionally, Commerce intends to preliminarily rescind the review, in part, with respect to seven companies. Interested parties are invited to comment on these preliminary results of review.",
+        "sourceType": "Notice",
+        "action": null,
+        "agency": "International Trade Administration",
+        "agencySlug": "international-trade-administration",
+        "publicationDate": "2026-10-13",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [
+          "A-552-816"
+        ],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/13/2026-20816/welded-stainless-steel-pressure-pipe-from-the-socialist-republic-of-vietnam-preliminary-results-of",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-13/pdf/2026-20816.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "classification-duties",
+            "matchedTerms": [
+              "antidumping",
+              "duty"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20816"
+      }
+    }
+  ]
+}

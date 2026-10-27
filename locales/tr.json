@@ -170,5 +170,11 @@
   "worksheetLanguage": "Resmi bölüm adları ve sorular İngilizce kalır. Satır sonları ve sayfa işaretleri kaldırılmış, özgün ifade korunmuştur. İndirmeden tüm soruları okumak için bir bölümü açın.",
   "worksheetSourcePage": "Resmi PDF · sayfa",
   "worksheetExcelDownload": "Ekip çalışma dosyasını indir · Excel",
-  "worksheetExcelText": "İngilizce Excel dosyasında resmi sorular ayrı bir sekmededir. Sorumlu atayın, yanıt ve kanıtları toplayın, sonraki hazırlık adımını filtreleyin. İnceleme durumu ve ölçülen/tahmini değer türü açılır listelerden seçilir. Tüm yanıt alanları başlangıçta boştur. Sayaçlar hukuki uyumu değil hazırlığı izler."
+  "worksheetExcelText": "İngilizce Excel dosyasında resmi sorular ayrı bir sekmededir. Sorumlu atayın, yanıt ve kanıtları toplayın, sonraki hazırlık adımını filtreleyin. İnceleme durumu ve ölçülen/tahmini değer türü açılır listelerden seçilir. Tüm yanıt alanları başlangıçta boştur. Sayaçlar hukuki uyumu değil hazırlığı izler.",
+  "readerRecord": "Tyllus kaydı",
+  "previousTitle": "Önceki seçkilerde bulunan kayıtlar",
+  "previousScope": "Önceki açık veri seçkilerinden korunan referanslar. Güncel adetlere, dışa aktarımlara ve akışlara dahil değildir. Seçkiden çıkması resmi belgenin geri çekildiği anlamına gelmez.",
+  "previousMatchText": "Bu kayıt önceki bir kaynak seçkisinde yer alıyordu; güncel veri setinde bulunmuyor. Tyllus kaydına veya resmi belgeye geçebilirsiniz. Burada bulunmaması geri çekildiği anlamına gelmez.",
+  "previousSnapshot": "Son yer aldığı kaynak seçkisi",
+  "previousSource": "Korunan kaynak seçkisi"
 }

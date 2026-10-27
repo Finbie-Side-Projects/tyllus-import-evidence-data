@@ -15,6 +15,7 @@ from xml.etree import ElementTree as ET
 from feeds import FEEDS, render_feed, selected_notices
 from build_site import ROOT, LOCALES, build_page
 from consultation import load_questions, csv_text, RELATIVE, FIELDS
+from history import load_history
 
 
 class Page(HTMLParser):
@@ -23,6 +24,7 @@ class Page(HTMLParser):
         self.links = []
         self.ids = []
         self.notice_ids = []
+        self.previous_ids = []
         self.sources = []
         self.article_depth = False
         self.title = False
@@ -37,6 +39,8 @@ class Page(HTMLParser):
             self.ids.append(attrs['id'])
         if tag == 'article' and 'notice' in attrs.get('class', '').split():
             self.notice_ids.append(attrs['id'])
+        if attrs.get('data-previous-id'):
+            self.previous_ids.append(attrs['data-previous-id'])
         for key in ('href', 'src'):
             if key in attrs:
                 self.links.append(attrs[key])
@@ -84,6 +88,8 @@ def main():
         require(len([n for n in names if re.fullmatch(r'xl/tables/table\d+\.xml', n)]) == 2, 'Missing workbook filter tables')
     payload = json.loads((ROOT / 'data/us-import-evidence-change-radar.json').read_text())
     notices = payload['notices']
+    history = load_history(ROOT)['entries']
+    historical_ids = {entry['notice']['id'] for entry in history}
     for filename, (_, agency) in FEEDS.items():
         contents = (ROOT / 'feeds' / filename).read_bytes()
         require(contents == render_feed(payload, filename), f'Stale RSS feed: {filename}')
@@ -114,6 +120,10 @@ def main():
         page.feed(contents)
         require(page.lang == locale, f'Wrong document language: {relative}')
         require(set(page.notice_ids) == expected and len(page.notice_ids) == len(notices), f'Missing readable notices in {relative}')
+        require(set(page.previous_ids) == historical_ids and len(page.previous_ids) == len(history), f'Missing earlier references in {relative}')
+        for entry in history:
+            require(html.escape(entry['notice']['title'], quote=True) in contents, f'Historical title changed in {relative}')
+            require(entry['notice']['radarUrl'] in contents and entry['notice']['officialUrl'] in contents, f'Missing historical source links in {relative}')
         require(len(page.ids) == len(set(page.ids)), f'Duplicate HTML IDs in {relative}')
         require(all(f'cbp-q{i}' in page.ids for i in range(1, 65)), f'Missing readable official question in {relative}')
         require(all(html.escape(q['question']) in contents for q in questions['questions']), f'Official question text missing in {relative}')

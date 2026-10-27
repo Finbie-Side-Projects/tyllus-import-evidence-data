@@ -206,12 +206,21 @@
             <p class="source-language">{{sourceLanguage}}</p>
             <div id="notice-list">{{noticeCards}}</div>
             <div id="empty" class="empty-state" hidden>
-              <h3>{{emptyTitle}}</h3>
-              <p>{{emptyText}}</p>
+              <h3 id="empty-title">{{emptyTitle}}</h3>
+              <p id="empty-hint">{{emptyText}}</p>
+              <div id="previous-match" class="previous-match" hidden>
+                <h4 id="previous-match-title"></h4>
+                <p>{{previousMatchText}}</p>
+                <div class="notice-links">
+                  <a id="previous-reader" href="#notices">{{readerRecord}} ↗</a>
+                  <a id="previous-official" href="#notices">{{officialNotice}} ↗</a>
+                </div>
+              </div>
               <button id="empty-reset" class="button secondary" type="button">
                 {{reset}}
               </button>
             </div>
+            {{previousRecords}}
             <nav
               id="pagination"
               class="pagination enhancement"

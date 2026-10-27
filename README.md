@@ -21,6 +21,13 @@ The RSS feeds retain original English titles and abstracts, document IDs, public
 
 All dataset records are rendered directly on this website. JavaScript adds search, agency/topic/type filters, sorting and pagination; complete records remain readable without it. The English interface is the default, with Turkish, Italian and Spanish interfaces. The root forwards to `/en/`.
 
+Previously shared notice IDs can leave the current selection. The separate
+[earlier-reference registry](data/previously-included-notices.json) preserves
+their original record and source-snapshot provenance. Searching an exact earlier
+ID offers its Tyllus reader record and official source, with a clear historical
+label. Earlier references are not included in current counts, exports or feeds;
+absence from this selection does not mean an official notice was withdrawn.
+
 An on-demand workflow refreshes the repository from Tyllus's public endpoints, rebuilds each locale page, verifies data and pages, and commits only when the published files change.
 
 ## CBP consultation response worksheet

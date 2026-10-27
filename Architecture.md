@@ -23,3 +23,11 @@ separate blank response tab, categorical validation and preparation formulas.
 It has no macros, external data connections or response uploads. The verifier
 checks source rows, initial input blanks, filter tables and formula presence.
 Regeneration is required if retained source questions change.
+
+`data/previously-included-notices.json` retains records that leave the current
+source selection. Each entry identifies its prior public source commit, snapshot
+date and checksums. Refresh accepts historical entries only from the previously
+committed snapshot. They are rendered separately and never added to current
+counts, exports or feeds. An exact historical-ID search with no current record
+offers the retained Tyllus and official links. Unknown IDs do not create guessed
+links, and a record returning to the current selection uses its current result.

@@ -10,6 +10,12 @@
   );
   const selection = window.TyllusSelection;
   const cards = Array.from(document.querySelectorAll(".notice"));
+  const previousRecords = new Map(
+    Array.from(document.querySelectorAll("[data-previous-id]")).map((record) => [
+      record.dataset.previousId,
+      record,
+    ]),
+  );
   const pageSize = 12;
   const fields = Object.fromEntries(
     ["search", "agency", "topic", "type", "sort"].map((id) => [
@@ -84,6 +90,22 @@
       count: matching.length,
     });
     document.getElementById("empty").hidden = matching.length > 0;
+    const earlier = !matching.length && !sourceById.has(fields.search.value.trim())
+      ? previousRecords.get(fields.search.value.trim())
+      : undefined;
+    document.getElementById("previous-match").hidden = !earlier;
+    document.getElementById("empty-title").textContent = earlier
+      ? strings.previousTitle
+      : strings.emptyTitle;
+    document.getElementById("empty-hint").hidden = Boolean(earlier);
+    if (earlier) {
+      document.getElementById("previous-match-title").textContent =
+        earlier.querySelector("h4").textContent;
+      document.getElementById("previous-reader").href =
+        earlier.querySelector("[data-previous-reader]").href;
+      document.getElementById("previous-official").href =
+        earlier.querySelector("[data-previous-official]").href;
+    }
     document.getElementById("page-count").textContent = format("page", {
       current: page,
       total: totalPages,

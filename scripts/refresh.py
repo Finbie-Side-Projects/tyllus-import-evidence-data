@@ -7,6 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 from urllib.request import Request, urlopen
+from history import retain_previous
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +36,8 @@ def fetch(url: str) -> tuple[bytes, dict[str, str | int | None]]:
 
 def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    prior_path = DATA_DIR / 'us-import-evidence-change-radar.json'
+    previous_bytes = prior_path.read_bytes() if prior_path.exists() else None
     files = []
     for filename, source_url in SOURCES.items():
         body, headers = fetch(source_url)
@@ -50,6 +53,7 @@ def main() -> None:
         )
 
     payload = json.loads((DATA_DIR / "us-import-evidence-change-radar.json").read_text())
+    retain_previous(ROOT, previous_bytes, payload)
     manifest = {
         "captured_at": payload.get("generatedAt"),
         "dataset_generated_at": payload.get("generatedAt"),

@@ -5,8 +5,16 @@
     <link>https://finbie-side-projects.github.io/tyllus-import-evidence-data/en/</link>
     <description>Up to 50 latest notices in the current Tyllus selection, with original Federal Register titles and abstracts. Non-exhaustive discovery aid; verify official sources before acting. Dataset terms: https://www.tyllus.com/en/terms-of-use</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 18:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://finbie-side-projects.github.io/tyllus-import-evidence-data/feeds/ustr.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Request for Comments on Further Suspension of Section 301 Action: China's Targeting of the Maritime, Logistics, and Shipbuilding Sectors for Dominance</title>
+      <link>https://www.federalregister.gov/documents/2026/10/26/2026-21755/request-for-comments-on-further-suspension-of-section-301-action-chinas-targeting-of-the-maritime</link>
+      <guid isPermaLink="false">urn:federal-register:2026-21755</guid>
+      <category>Trade Representative, Office of United States</category>
+      <category>Notice</category>
+      <description>&lt;p&gt;Document: 2026-21755; Published: 2026-10-26&lt;/p&gt;&lt;p&gt;To allow for further negotiation with China regarding the acts, policies, and practices at issue in this investigation, the U.S. Trade Representative (Trade Representative) is proposing to modify the action taken in this investigation to further suspend that action for two months, through January 9, 2027. This notice invites public comment from interested parties on the proposed modification.&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21755.pdf"&gt;Official PDF&lt;/a&gt; · &lt;a href="https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-21755"&gt;Dates and context in Tyllus Radar&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Notice of Conforming Amendment to Product Exclusion: China's Acts, Policies, and Practices Related to Technology Transfer, Intellectual Property, and Innovation</title>
       <link>https://www.federalregister.gov/documents/2026/10/07/2026-20511/notice-of-conforming-amendment-to-product-exclusion-chinas-acts-policies-and-practices-related-to</link>
