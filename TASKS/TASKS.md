@@ -29,4 +29,4 @@
 
 - [x] [0018-preserve-shared-record-references.md](0018-preserve-shared-record-references.md) — Keep older shared IDs useful without mixing historical records into the current selection.
 
-- [ ] [0019-refresh-2026-10-30-snapshot.md](0019-refresh-2026-10-30-snapshot.md) — Refresh current public sources, preserve historical references and verify the deployed snapshot.
+- [x] [0019-refresh-2026-10-30-snapshot.md](0019-refresh-2026-10-30-snapshot.md) — Refresh current public sources, preserve historical references and verify the deployed snapshot.

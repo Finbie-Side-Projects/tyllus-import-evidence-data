@@ -1,5 +1,7 @@
-# [IN PROGRESS] Refresh 30 October public snapshot
+# [DONE] Refresh 30 October public snapshot
 
 Synchronize the four current public Tyllus source distributions after the distribution work. Retain removed records separately with existing verified provenance. Build all locales and feeds, validate new official source availability, and verify the deployed snapshot and current/historical search behavior before completing this task. Preserve the existing worksheet, workbook and archived DOI.
 
 The refreshed record 2026-21824 uses the official GovInfo HTML edition. The old Federal Register-only host check rejects that valid source. Apply one shared URL validator to current and historical notices: require HTTPS, the exact official host, notice identity and publication date; reject mismatched or off-site URLs. Check positive official sources and adversarial destinations before publication.
+
+Completed 30 October 2026. Published 188 current records (two added, one absent, 186 retained unchanged), with 11 historical references kept separate. Both new official PDFs are accessible. The verifier, five selection tests and four source-boundary tests pass. Pages build 41106608050 succeeded; 23 live files match the repository. Live new GovInfo record, newly historical record, unknown-ID behavior and Turkish selection preservation were verified. The new official link was opened and the matching government document inspected. Five distribution/manifest assets are archived in data-2026-10-30. The worksheet, workbook and original DOI are unchanged; a separate mobile viewport test was not performed.
