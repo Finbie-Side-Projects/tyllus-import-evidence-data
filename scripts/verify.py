@@ -7,6 +7,7 @@ import io
 import json
 import re
 import subprocess
+import sys
 import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
@@ -16,6 +17,7 @@ from feeds import FEEDS, render_feed, selected_notices
 from build_site import ROOT, LOCALES, build_page
 from consultation import load_questions, csv_text, RELATIVE, FIELDS
 from history import load_history
+from official_sources import valid_official_source
 
 
 class Page(HTMLParser):
@@ -129,7 +131,7 @@ def main():
         require(all(html.escape(q['question']) in contents for q in questions['questions']), f'Official question text missing in {relative}')
         for notice in notices:
             require(notice['officialUrl'] in contents, f'Missing official source in {relative}')
-            require(urlparse(notice['officialUrl']).hostname == 'www.federalregister.gov', 'Unexpected source host.')
+            require(valid_official_source(notice), f'Unexpected official source URL: {notice["id"]}')
         for link in page.links:
             url = urlparse(link)
             if url.scheme or url.netloc:
@@ -152,6 +154,7 @@ def main():
     for asset in ('app.js', 'theme.js', 'selection.js'):
         subprocess.run(['node', '--check', str(ROOT / 'assets' / asset)], check=True)
     subprocess.run(['node', '--test', str(ROOT / 'scripts/selection.test.cjs')], check=True)
+    subprocess.run([sys.executable, str(ROOT / 'scripts/official_sources_test.py')], check=True)
     files = subprocess.check_output(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT).decode().split('\0')
     secret_patterns = [r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----', r'gh[pousr]_[A-Za-z0-9]{30,}', r'AIza[0-9A-Za-z_-]{35}', r'sk-(?:proj-)?[A-Za-z0-9_-]{30,}', r'Authorization\s*:\s*[\"\x27]?Bearer\s+[A-Za-z0-9._-]{20,}', r'(?:live|test)_[A-Za-z0-9]{32,}']
     for filename in filter(None, files):

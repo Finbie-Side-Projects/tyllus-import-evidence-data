@@ -2,6 +2,37 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "lastIncludedSnapshot": "2026-10-27T12:00:00.000Z",
+      "sourceCommit": "6a796ffbec097c8923a15da70d129048d54d4b80",
+      "sourceSnapshotSha256": "bfc949eb304cfce8414c7de22d41ea3835bc41359616f12dfaa20bbe29493f0e",
+      "noticeSha256": "9ae3a0371e79dcd90421ff41dce686c743f6ddad6f2fb8a533a3a8dd4fca9431",
+      "notice": {
+        "id": "2026-20932",
+        "title": "Notice of Receipt of Complaint; Solicitation of Comments Relating to the Public Interest",
+        "abstract": "Notice is hereby given that the U.S. International Trade Commission has received a complaint entitled Certain Spectral Flow Cytometry Systems and Components Thereof, DN 3943; the Commission is soliciting comments on any public interest issues raised by the complaint or complainant's filing pursuant to the Commission's Rules of Practice and Procedure.",
+        "sourceType": "Notice",
+        "action": "Notice.",
+        "agency": "International Trade Commission",
+        "agencySlug": "international-trade-commission",
+        "publicationDate": "2026-10-14",
+        "commentsCloseOn": null,
+        "effectiveOn": null,
+        "docketIds": [],
+        "officialUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-20932/notice-of-receipt-of-complaint-solicitation-of-comments-relating-to-the-public-interest",
+        "pdfUrl": "https://www.govinfo.gov/content/pkg/FR-2026-10-14/pdf/2026-20932.pdf",
+        "officialLanguage": "en",
+        "evidenceDomains": [
+          {
+            "id": "systems-filing",
+            "matchedTerms": [
+              "filing"
+            ]
+          }
+        ],
+        "radarUrl": "https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-20932"
+      }
+    },
+    {
       "lastIncludedSnapshot": "2026-10-26T18:00:00.000Z",
       "sourceCommit": "51a5ebf8dc174268e7fce50946adab453241ba89",
       "sourceSnapshotSha256": "52473e82b605d91673f482b98d60cd0af2fffd1f0d4edd656c6d00c900e2093e",

@@ -5,8 +5,16 @@
     <link>https://finbie-side-projects.github.io/tyllus-import-evidence-data/en/</link>
     <description>Up to 50 latest notices in the current Tyllus selection, with original Federal Register titles and abstracts. Non-exhaustive discovery aid; verify official sources before acting. Dataset terms: https://www.tyllus.com/en/terms-of-use</description>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://finbie-side-projects.github.io/tyllus-import-evidence-data/feeds/cbp.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Customs Broker Permit User Fee Payment for 2027</title>
+      <link>https://www.federalregister.gov/documents/2026/10/27/2026-21853/customs-broker-permit-user-fee-payment-for-2027</link>
+      <guid isPermaLink="false">urn:federal-register:2026-21853</guid>
+      <category>U.S. Customs and Border Protection</category>
+      <category>Notice</category>
+      <description>&lt;p&gt;Document: 2026-21853; Published: 2026-10-27&lt;/p&gt;&lt;p&gt;This document provides notice to customs brokers that the annual user fee that is assessed for each permit held by a customs broker, whether an individual, partnership, association, or corporation, is due no later than January 29, 2027. Pursuant to fee adjustments required by the Fixing America&amp;#x27;s Surface Transportation Act (FAST Act) and the U.S. Customs and Border Protection (CBP) regulations, the customs broker permit user fee payable for calendar year 2027 will be $190.88.&lt;/p&gt;&lt;p&gt;&lt;a href="https://www.govinfo.gov/content/pkg/FR-2026-10-27/pdf/2026-21853.pdf"&gt;Official PDF&lt;/a&gt; · &lt;a href="https://www.tyllus.com/en/resources/us-import-evidence-change-radar/2026-21853"&gt;Dates and context in Tyllus Radar&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Indefinite Suspension of the De Minimis Exemption for Mail Shipments and New Postal Informal Entry Process; Delayed Compliance Extension</title>
       <link>https://www.federalregister.gov/documents/2026/10/22/2026-21600/indefinite-suspension-of-the-de-minimis-exemption-for-mail-shipments-and-new-postal-informal-entry</link>

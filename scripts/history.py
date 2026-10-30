@@ -4,7 +4,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
-from urllib.parse import urlparse
+from official_sources import valid_official_source
 
 from site_render import text, time_tag
 
@@ -36,8 +36,7 @@ def load_history(root):
             raise ValueError('Historical record needs a snapshot checksum')
         if notice['radarUrl'] != f'https://www.tyllus.com/en/resources/us-import-evidence-change-radar/{key}':
             raise ValueError('Unexpected historical reader URL')
-        official = urlparse(notice['officialUrl'])
-        if official.scheme != 'https' or official.hostname != 'www.federalregister.gov':
+        if not valid_official_source(notice):
             raise ValueError('Unexpected historical official URL')
     return history
 
